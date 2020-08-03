@@ -4,8 +4,8 @@
     <include url="%VIEWER%/plugins/contextmenu.xml" />
     <include url="%VIEWER%/plugins/iphone_fullscreen_swipe.xml" />
     <include url="%VIEWER%/plugins/webvr.xml" />
-    <!-- <include url="%VIEWER%/plugins/depthmap_navigation.xml" /> -->
-    <!--  <plugin name="navigator" keep="true" devices="html5" url="%VIEWER%/plugins/navigator.js" /> -->
+    <include url="%VIEWER%/plugins/depthmap_navigation.xml" /> 
+    <plugin name="navigator" keep="true" devices="html5" url="%VIEWER%/plugins/navigator.js" if="0" /> 
 
     <!-- a little helper editor tool, change the if="0" to if="1" to use it -->
     <include url="tour_edithelper.xml" if="0" />
@@ -21,7 +21,7 @@
 
 
     <!-- a style for changing depthmap settings for all scenes -->
-    <style name="depthmapsettings" background="none" />
+    <style name="depthmapsettings" background="pano" />
 
     <style name="floorspot" keep="true" type="text" css="font-size:20px;text-align:center;" vcenter="true" width="200" height="200" scale="0.05" bgroundedge="100" bgborder="2 0x000000 1" bgshadow="0 0 5 0xFFFFFF 1.0" oversampling="2" mipmapping="true" zorder="1" distorted="true" depth="0" depthbuffer="true" torigin="world" rotationorder="xyz" rx="-90" alpha="0" onloaded.addevent="delayedcall(1.0, tween(alpha,0.5); );" onover.addevent="tween(scale,0.075); tween(alpha,0.7);" onout.addevent="tween(scale,0.05); tween(alpha,0.5);" onclick="floorspot_onclick();" />
 
@@ -32,6 +32,6 @@
     </action>
 
     <!-- default depthmap rendering mode -->
-    <display depthmaprendermode="depthmap" />
+    <display depthmaprendermode="3dmodel" />
 
 </krpano>

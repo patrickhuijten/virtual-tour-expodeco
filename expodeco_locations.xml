@@ -4,6 +4,16 @@
 
     <style name="registro_0001" prealign="0|0|0" ox="0" oy="0" oz="0" linkedscene="expodeco_registro_0001" autohotspot="true" />
     <style name="registro_0002" prealign="0|0|0" ox="0" oy="0" oz="+250" linkedscene="expodeco_registro_0002" autohotspot="true" />
+    <style name="registro_0003" prealign="0|0|0" ox="0" oy="0" oz="+500" linkedscene="expodeco_registro_0003" autohotspot="true" />
+    <style name="registro_0004" prealign="0|0|0" ox="0" oy="0" oz="+750" linkedscene="expodeco_registro_0004" autohotspot="true" />
+    <style name="registro_0005" prealign="0|0|0" ox="0" oy="0" oz="+1000" linkedscene="expodeco_registro_0005" autohotspot="true" />
+    <style name="registro_0006" prealign="0|0|0" ox="0" oy="0" oz="+1250" linkedscene="expodeco_registro_0006" autohotspot="true" />
+    <style name="registro_0007" prealign="0|0|0" ox="0" oy="0" oz="+1500" linkedscene="expodeco_registro_0007" autohotspot="true" />
+    <style name="registro_0008" prealign="0|0|0" ox="0" oy="0" oz="+1750" linkedscene="expodeco_registro_0008" autohotspot="true" />
+    <style name="registro_0009" prealign="0|0|0" ox="0" oy="0" oz="+2000" linkedscene="expodeco_registro_0009" autohotspot="true" />
+    <style name="registro_0010" prealign="0|0|0" ox="0" oy="0" oz="+2250" linkedscene="expodeco_registro_0010" autohotspot="true" />
+    <style name="registro_0011" prealign="0|0|0" ox="0" oy="0" oz="+2500" linkedscene="expodeco_registro_0011" autohotspot="true" />
+    <style name="registro_0012" prealign="0|0|0" ox="0" oy="0" oz="+2750" linkedscene="expodeco_registro_0012" autohotspot="true" />
     <!-- Automatically a floor-hotspot at each pano world location -->
     <action name="generate_hotspots" autorun="onstart" scope="local">
         if(true, 
