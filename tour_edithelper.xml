@@ -1,0 +1,137 @@
+<krpano>
+
+	<!--
+		A little custom helper tool for finding hotspot- and viewpoint-positions.
+	-->
+
+	<action name="editor_help" scope="local" autorun="onstart">
+		<!-- add a textfield that shows the current viewing position -->
+		addlayer(auto, l);
+		set(l, keep=true, type=text, align=righttop, x=5, y=5, css='font-family:monospace;');
+		copy(v, global.view);
+		renderloop(
+			calc(l.html,
+				'[u]view[/u][br]'+
+				'hlookat='+roundval(v.hlookat,1)+'[br]'+
+				'vlookat='+roundval(v.vlookat,1)+'[br]'+
+				'fov='+roundval(v.fov,1)+'[br]'+
+				'tx='+roundval(v.tx,1)+'[br]'+
+				'ty='+roundval(v.ty,1)+'[br]'+
+				'tz='+roundval(v.tz,1)+'[br]'+
+				'');
+		);
+
+		<!-- add buttons for adding info and text spots -->
+		addlayer(auto, addinfospot);
+		set(addinfospot, keep=true, type=text, align=righttop, x=5 ,y=120, html='add infospot', css='font-family:monospace;', onclick='addinfospot()');
+
+		addlayer(auto, addinfotext);
+		set(addinfotext, keep=true, type=text, align=righttop, x=5 ,y=145, html='add infotext', css='font-family:monospace;', onclick='addinfotext()');
+		
+		addlayer(auto, removespots);
+		set(removespots, keep=true, type=text, align=righttop, x=5 ,y=170, html='remove all', css='font-family:monospace;', onclick='removeallspots()');
+	</action>
+
+
+	<action name="addinfospot" scope="local">
+		addhotspot(auto, h);
+		h.loadstyle(infospot);
+		set(d, 150);
+		set(h,
+			tx=calc(view.tx + d*view.dir.x),
+			ty=calc(view.ty + d*view.dir.y),
+			tz=calc(view.tz + d*view.dir.z),
+			ath=get(view.hlookat),
+			atv=get(view.vlookat),
+			alpha=0.5,
+			zorder=100,
+			onover='tween(scale,0.2); tween(alpha,0.5); copy(overspot,name);',
+			onout='delayedcall(0.1, set(global.overspot,null); );',
+			ondown='dragspot();',
+			onclick='showspotinfos();'
+			);
+	</action>
+
+
+	<action name="addinfotext" scope="local">
+		jsget(infotext, prompt('Enter the info-spot text (use [br] for line-breaks)', 'Lorem ipsum dolor sit amet, consetetur[br]sadipscingelitr, sed diam nonumy eirmod[br]temporinvidunt ut labore et dolore magna[br]aliquyam erat.') );
+		addhotspot(auto, h);
+		h.loadstyle(infospottext);
+		set(d, 150);
+		set(h,
+			tx=calc(view.tx + d*view.dir.x),
+			ty=calc(view.ty + d*view.dir.y),
+			tz=calc(view.tz + d*view.dir.z),
+			ath=get(view.hlookat),
+			atv=get(view.vlookat),
+			html=get(infotext),
+			alpha=1.0,
+			zorder=99,
+			enabled=true,
+			onover='copy(overspot,name);',
+			onout='delayedcall(0.1, set(global.overspot,null); );',
+			ondown='dragspot();',
+			onclick='showspotinfos();'
+			);
+	</action>
+	
+	
+	<action name="removeallspots" scope="local">
+		for(set(i,0), i LT hotspot.count, inc(i),
+			if(hotspot[get(i)].style == 'infospot' || hotspot[get(i)].style == 'infospottext',
+				removehotspot(get(i));
+				dec(i);
+			);
+		);
+	</action>
+	
+
+	<!-- drag the spots somehow around (simplified, not 1:1 mapped to mouse movement) -->
+	<action name="dragspot" scope="local">
+		copy(start_mx, mouse.x);
+		copy(start_my, mouse.y);
+		copy(start_tx, caller.tx);
+		copy(start_ty, caller.ty);
+		copy(start_tz, caller.tz);
+		asyncloop(caller.pressed,
+			calc(dx, (mouse.x - start_mx) * 0.1);
+			calc(dy, (mouse.y - start_my) * 0.1);
+			calc(caller.tx, start_tx + view.dir.z * dx);
+			calc(caller.tz, start_tz - view.dir.x * dx);
+			calc(caller.ty, start_ty + dy);
+			callwith(caller, showspotinfos(); );
+		);
+	</action>
+
+
+	<!-- when dragging a spot or clicking on it, show its current position -->
+	<action name="showspotinfos" scope="local">
+		addlayer('showspotinfos', l);
+		set(l, keep=true, type=text, align=righttop, x=5, y=205, css='font-family:monospace;');
+		calc(l.html,
+			'[u]'+caller.style+'[/u][br]'+
+			'tx='+roundval(caller.tx,2)+'[br]'+
+			'ty='+roundval(caller.ty,2)+'[br]'+
+			'tz='+roundval(caller.tz,2)+'[br]'+
+			'ath='+roundval(caller.ath,2)+'[br]'+
+			'atv='+roundval(caller.atv,2)+'[br]'+
+			'');
+	</action>
+
+
+	<!-- when hovering a spot, add a contextmenu item for deleting it -->
+	<events name="editor_events" keep="true" oncontextmenu="editor_oncontextmenu_event();" />
+
+	<action name="editor_oncontextmenu_event" scope="local">
+		if(global.overspot !== null,
+			contextmenu.item.insertarrayitem(delspot,0);
+			set(contextmenu.item[delspot].caption, '[span style=[dq]font-weight:bold;[dq]]Editor: Delete Spot[/pan]');
+			set(contextmenu.item[delspot].separator, both);
+			set(contextmenu.item[delspot].onclick, calc('removehotspot(' + overspot + ');set(overspot,null);') );
+		  ,
+			contextmenu.item.removearrayitem(delspot);
+		);
+	</action>
+
+
+</krpano>
