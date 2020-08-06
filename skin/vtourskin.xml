@@ -797,6 +797,7 @@
 	<action name="skin_nextscene" scope="local" args="indexadd">
 		add(newsceneindex, scene[get(xml.scene)].index, indexadd);
 		if(newsceneindex GE 0 AND newsceneindex LT scene.count,
+
 			skin_loadscene(get(newsceneindex), calc(indexadd LT 0 ? skin_settings.loadscene_blend_prev : skin_settings.loadscene_blend_next));
 		);
 	</action>
@@ -807,6 +808,7 @@
 		sub(lastsceneindex, scene.count, 1);
 		if(newsceneindex LT 0, copy(newsceneindex,lastsceneindex));
 		if(newsceneindex GT lastsceneindex, set(newsceneindex,0));
+
 		skin_loadscene(get(newsceneindex), calc(indexadd LT 0 ? skin_settings.loadscene_blend_prev : skin_settings.loadscene_blend_next));
 	</action>
 
@@ -819,7 +821,8 @@
 
 		calc(layer[skin_thumbborder].parent, 'skin_thumb_' + scene[get(newscenenameorindex)].index);
 		layer[skin_thumbs].scrolltocenter(get(scene[get(newscenenameorindex)].thumbx), get(scene[get(newscenenameorindex)].thumby));
-		loadscene(get(scene[get(newscenenameorindex)].name), null, get(skin_settings.loadscene_flags), get(blendmode));
+		tour_loadscene(get(scene[get(newscenenameorindex)].name));
+		<!-- loadscene(get(scene[get(newscenenameorindex)].name), null, get(skin_settings.loadscene_flags), get(blendmode)); -->
 	</action>
 
 
