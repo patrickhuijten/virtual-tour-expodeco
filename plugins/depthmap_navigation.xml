@@ -33,7 +33,7 @@
 	
 	<!-- walking/flying controls -->
 	<action name="depthmap_walkaroundmovement" autorun="onstart" type="Javascript"><![CDATA[
-		var speed = 0.1;
+		var speed = 0.5;
 		var friction = 0.9;
 		var walkaround = krpano.get("walkaround");
 		var vx=0, vy=0, vz=0;
@@ -68,17 +68,16 @@
 			var lz2 = Math.cos(h);
 			
 			// 3D direction vector (flying)
-			var tmp = Math.cos(v);
-			var lx3 = lx2 * tmp;
-			var ly3 = Math.sin(v);
-			var lz3 = lz2 * tmp;
+			var lx3 = krpano.view.dir.x;
+			var ly3 = krpano.view.dir.y;
+			var lz3 = krpano.view.dir.z;
 			
 			var wx = walkaround.right - walkaround.left;
 			var wz = walkaround.forward - walkaround.backward;
 			var wy = walkaround.up - walkaround.down;
 			
 			// handle the touchpad or joystick input from the vr-controllers
-			var vrcontroller = krpano.webvr ? krpano.webvr.vrcontroller : null;
+			var vrcontroller = (krpano.webvr && krpano.webvr.enabled) ? krpano.webvr.vrcontroller : null;
 			if (vrcontroller)
 			{
 				var vrcontroller_count = vrcontroller.length;
@@ -86,6 +85,7 @@
 				{
 					var controller = vrcontroller[i];
 					var axes = controller.axes;
+					
 					if (axes)
 					{
 						// when having a depthmap: move around (1), otherwise only rotate the pano (0)
@@ -107,6 +107,20 @@
 						{
 							is_touchpad = true;
 							y_axis_scale *= -1.0;
+						}
+						
+						if (krpano.webvr.iswebxr)
+						{
+							// WebXR: axes[0,1] = touchpad, axes[2,3] = thumbstick
+							if ( axes[0] != 0 || axes[1] != 0 )
+							{
+								is_touchpad = true;
+							}
+							else
+							{
+								// thumbstick - map axes for further processing
+								axes = [axes[2],axes[3]];
+							}
 						}
 						 
 						if (is_touchpad)
