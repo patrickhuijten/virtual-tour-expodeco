@@ -474,7 +474,7 @@
 
 			calc(thumbxoffset, thumbwidth + thumbpadding);
 			calc(thumbxcenter, thumbxoffset * 0.5);
-			calc(thumbbarwidth, thumbxoffset * scene.count + thumbpadding);
+			calc(thumbbarwidth, thumbxoffset * 3 + thumbpadding);
 			calc(thumbbarheight, thumbpadding + thumbheight + thumbpadding);
 
 			if(skin_settings.thumbs_scrollindicator,
@@ -486,39 +486,43 @@
 
 			calc(layer[skin_thumbs_scrollleft].y, thumbbarheight * 0.5);
 			calc(layer[skin_thumbs_scrollright].y, thumbbarheight * 0.5);
-
+			set (x, 0);
 			for(set(i,0), i LT scene.count, inc(i),
-				calc(thumbname, 'skin_thumb_' + i);
-				addlayer(get(thumbname));
 
-				set(layer[get(thumbname)],
-					url=get(scene[get(i)].thumburl),
-					keep=true,
-					parent='skin_thumbs',
-					align='lefttop',
-					crop=get(thumbcrop),
-					width=get(thumbwidth),
-					height=get(thumbheight),
-					x=calc(thumbpadding + i*thumbxoffset),
-					y=get(thumbpadding),
-					linkedscene=get(scene[get(i)].name),
-					onclick='copy(layer[skin_thumbborder].parent, name); skin_loadscene(get(linkedscene),get(skin_settings.loadscene_blend));'
-				);
-				
-				set(scene[get(i)], 
-					thumbx=calc(thumbpadding + i*thumbxoffset + thumbxcenter),
-					thumby=get(thumbpadding)
-				);
-				
-				if(skin_settings.tooltips_thumbs,
-					set(layer[get(thumbname)].tooltip, get(scene[get(i)].title) );
-					layer[get(thumbname)].loadstyle(skin_tooltips);
-				);
-				if(skin_settings.thumbs_text,
-					calc(thumbtext, 'skin_thumbtext_' + i);
-					addlayer(get(thumbtext));
-					layer[get(thumbtext)].loadstyle(skin_thumbtext_style);
-					set(layer[get(thumbtext)], keep=true, parent=get(thumbname), html=get(scene[get(i)].title) );
+				if(scene[get(i)].hasthumb == true,
+					calc(thumbname, 'skin_thumb_' + i);
+					addlayer(get(thumbname));
+
+					set(layer[get(thumbname)],
+						url=get(scene[get(i)].thumburl),
+						keep=true,
+						parent='skin_thumbs',
+						align='lefttop',
+						crop=get(thumbcrop),
+						width=get(thumbwidth),
+						height=get(thumbheight),
+						x=calc(thumbpadding + x*thumbxoffset),
+						y=get(thumbpadding),
+						linkedscene=get(scene[get(i)].name),
+						onclick='skin_loadscene(get(linkedscene),get(skin_settings.loadscene_blend));'
+					);
+					
+					set(scene[get(i)], 
+						thumbx=calc(thumbpadding + x*thumbxoffset + thumbxcenter),
+						thumby=get(thumbpadding)
+					);
+					
+					if(skin_settings.tooltips_thumbs,
+						set(layer[get(thumbname)].tooltip, get(scene[get(i)].title) );
+						layer[get(thumbname)].loadstyle(skin_tooltips);
+					);
+					if(skin_settings.thumbs_text,
+						calc(thumbtext, 'skin_thumbtext_' + i);
+						addlayer(get(thumbtext));
+						layer[get(thumbtext)].loadstyle(skin_thumbtext_style);
+						set(layer[get(thumbtext)], keep=true, parent=get(thumbname), html=get(scene[get(i)].title) );
+					);
+					inc(x);
 				);
 			 );
 
