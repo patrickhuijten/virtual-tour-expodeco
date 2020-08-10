@@ -4,15 +4,15 @@
   <include url="%VIEWER%/plugins/contextmenu.xml" />
   <include url="%VIEWER%/plugins/iphone_fullscreen_swipe.xml" />
   <include url="%VIEWER%/plugins/webvr.xml" />
-  <!-- <include url="%VIEWER%/plugins/depthmap_navigation.xml" if="1" /> -->
+  <!--<include url="%VIEWER%/plugins/depthmap_navigation.xml" if="1" /> -->
   <!--  <plugin name="navigator" keep="true" devices="html5" url="%VIEWER%/plugins/navigator.js" if="0" />  -->
 
   <!-- a little helper editor tool, change the if="0" to if="1" to use it -->
-  <!--  <include url="tour_edithelper.xml" if="0" />
+  <!-- <include url="tour_edithelper.xml" if="0" />
     <include url="depthmap_helper_tool.xml" if="0" /> -->
 
   <action name="moveto_scene_center" scope="local">
-    tween(view.tx|view.ty|view.tz, calc(image.ox + '|' + image.oy + '|' + image.oz), 1.0);
+    tween(view.tx|view.ty|view.tz, calc(image.ox + '|' + image.oy + '|' + image.oz), 1.2);
 </action>
 
   <action name="floorspot_onclick" scope="local">
@@ -27,8 +27,9 @@
 
   <!-- action for loading scenes -->
   <action name="tour_loadscene" scope="local" args="scenename">
-        loadscene(get(scenename), null, MERGE|KEEPVIEW|KEEPMOVING, BLEND(0.25, linear));
-        moveto_scene_center();
+    
+    loadscene(get(scenename), null, MERGE|KEEPVIEW|KEEPMOVING, BLEND(0.5, linear));
+    moveto_scene_center()
     </action>
 
   <!-- default depthmap rendering mode -->
