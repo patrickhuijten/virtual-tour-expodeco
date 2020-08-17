@@ -23,7 +23,7 @@
   <!-- a style for changing depthmap settings for all scenes -->
   <style name="depthmapsettings" background="pano" />
 
-  <style name="floorspot" keep="true" type="text" css="font-size:20px;text-align:center;" vcenter="true" width="200" height="200" scale="0.25" bgroundedge="100" bgborder="2 0x000000 1" bgshadow="0 0 5 0xFFFFFF 1.0" oversampling="2" mipmapping="true" zorder="1" distorted="true" depth="0" depthbuffer="true" torigin="world" rotationorder="xyz" rx="-90" alpha="0" onloaded.addevent="delayedcall(1.0, tween(alpha,0.05));" onover.addevent="tween(scale,0.3);" onout.addevent="tween(scale,0.25);" onclick="floorspot_onclick();" />
+  <style name="floorspot" keep="true" type="text" css="font-size:20px;text-align:center;  background-blend-mode: multiply;  " vcenter="true" width="200" height="200" scale="0.25" bgroundedge="110" bgborder="10 0xFF0000 0" oversampling="2" mipmapping="true" zorder="1" distorted="true" depth="0" depthbuffer="true" torigin="world" rotationorder="xyz" rx="-90" alpha="0" onloaded.addevent="delayedcall(1.0, tween(alpha,0.05));" onover.addevent="tween(scale,0.3); tween(alpha,0.2));" onout.addevent="tween(scale,0.25); tween(alpha,0.05));" onclick="floorspot_onclick();" />
 
   <!-- action for loading scenes -->
   <action name="tour_loadscene" scope="local" args="scenename">
