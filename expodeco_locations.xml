@@ -50,10 +50,10 @@
     <style name="registro_0045" prealign="0|0|0" ox="-1500" oy="0" oz="+125" linkedscene="expodeco_registro_0045" autohotspot="true" unique="false" />
     <style name="registro_0046" prealign="0|0|0" ox="-1500" oy="0" oz="0" linkedscene="expodeco_registro_0046" autohotspot="true" unique="false" />
 
-    <style name="registro_0047" prealign="0|0|0" ox="-750" oy="0" oz="+550" linkedscene="expodeco_registro_0047" autohotspot="true" unique="false" />
-    <style name="registro_0048" prealign="0|0|0" ox="-750" oy="0" oz="+1100" linkedscene="expodeco_registro_0048" autohotspot="true" unique="false" />
-    <style name="registro_0049" prealign="0|0|0" ox="-750" oy="0" oz="+1650" linkedscene="expodeco_registro_0049" autohotspot="true" unique="false" />
-    <style name="registro_0050" prealign="0|0|0" ox="-750" oy="0" oz="+2200" linkedscene="expodeco_registro_0050" autohotspot="true" unique="false" />
+    <style name="registro_0047" prealign="0|0|0" ox="-750" oy="0" oz="+300" linkedscene="expodeco_registro_0047" autohotspot="true" unique="true" />
+    <style name="registro_0048" prealign="0|0|0" ox="-750" oy="0" oz="+1100" linkedscene="expodeco_registro_0048" autohotspot="true" unique="true" />
+    <style name="registro_0049" prealign="0|0|0" ox="-750" oy="0" oz="+1650" linkedscene="expodeco_registro_0049" autohotspot="true" unique="true" />
+    <style name="registro_0050" prealign="0|0|0" ox="-750" oy="0" oz="+2200" linkedscene="expodeco_registro_0050" autohotspot="true" unique="true" />
    
     <!-- Automatically a floor-hotspot at each pano world location -->
 
@@ -69,6 +69,10 @@
                     copy(hs.tx, st.ox);
                     calc(hs.ty, 60);
                     copy(hs.tz, st.oz);
+                    if (style[get(i)].unique == true,
+                    set(unique_scale, 5);
+                    copy(unique_scale, hs.scale);
+                    );
                     copy(hs.linkedscene, st.linkedscene);
                 );
             );
