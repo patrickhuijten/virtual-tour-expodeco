@@ -26,35 +26,36 @@
     <style name="registro_0022" prealign="0|0|0" ox="0" oy="0" oz="+2625" linkedscene="expodeco_registro_0022" autohotspot="true" unique="false" />
     <style name="registro_0023" prealign="0|0|0" ox="0" oy="0" oz="+2750" linkedscene="expodeco_registro_0023" autohotspot="true" unique="false" />
     
-    <style name="registro_0024" prealign="0|0|0" ox="-1500" oy="0" oz="+2750" linkedscene="expodeco_registro_0024" autohotspot="true" unique="false" />
-    <style name="registro_0025" prealign="0|0|0" ox="-1500" oy="0" oz="+2625" linkedscene="expodeco_registro_0025" autohotspot="true" unique="false" />
-    <style name="registro_0026" prealign="0|0|0" ox="-1500" oy="0" oz="+2500" linkedscene="expodeco_registro_0026" autohotspot="true" unique="false" />
-    <style name="registro_0027" prealign="0|0|0" ox="-1500" oy="0" oz="+2375" linkedscene="expodeco_registro_0027" autohotspot="true" unique="false" />
-    <style name="registro_0028" prealign="0|0|0" ox="-1500" oy="0" oz="+2250" linkedscene="expodeco_registro_0028" autohotspot="true" unique="false" />
-    <style name="registro_0029" prealign="0|0|0" ox="-1500" oy="0" oz="+2125" linkedscene="expodeco_registro_0029" autohotspot="true" unique="false" />
-    <style name="registro_0030" prealign="0|0|0" ox="-1500" oy="0" oz="+2000" linkedscene="expodeco_registro_0030" autohotspot="true" unique="false" />
-    <style name="registro_0031" prealign="0|0|0" ox="-1500" oy="0" oz="+1875" linkedscene="expodeco_registro_0031" autohotspot="true" unique="false" />
-    <style name="registro_0032" prealign="0|0|0" ox="-1500" oy="0" oz="+1750" linkedscene="expodeco_registro_0032" autohotspot="true" unique="false" />
-    <style name="registro_0033" prealign="0|0|0" ox="-1500" oy="0" oz="+1625" linkedscene="expodeco_registro_0033" autohotspot="true" unique="false" />
-    <style name="registro_0034" prealign="0|0|0" ox="-1500" oy="0" oz="+1500" linkedscene="expodeco_registro_0034" autohotspot="true" unique="false" />
-    <style name="registro_0035" prealign="0|0|0" ox="-1500" oy="0" oz="+1375" linkedscene="expodeco_registro_0035" autohotspot="true" unique="false" />
-    <style name="registro_0036" prealign="0|0|0" ox="-1500" oy="0" oz="+1250" linkedscene="expodeco_registro_0036" autohotspot="true" unique="false" />
-    <style name="registro_0037" prealign="0|0|0" ox="-1500" oy="0" oz="+1125" linkedscene="expodeco_registro_0037" autohotspot="true" unique="false" />
-    <style name="registro_0038" prealign="0|0|0" ox="-1500" oy="0" oz="+1000" linkedscene="expodeco_registro_0038" autohotspot="true" unique="false" />
-    <style name="registro_0039" prealign="0|0|0" ox="-1500" oy="0" oz="+875" linkedscene="expodeco_registro_0039" autohotspot="true" unique="false" />
-    <style name="registro_0040" prealign="0|0|0" ox="-1500" oy="0" oz="+750" linkedscene="expodeco_registro_0040" autohotspot="true" unique="false" />
-    <style name="registro_0041" prealign="0|0|0" ox="-1500" oy="0" oz="+625" linkedscene="expodeco_registro_0041" autohotspot="true" unique="false" />
-    <style name="registro_0042" prealign="0|0|0" ox="-1500" oy="0" oz="+500" linkedscene="expodeco_registro_0042" autohotspot="true" unique="false" />
-    <style name="registro_0043" prealign="0|0|0" ox="-1500" oy="0" oz="+375" linkedscene="expodeco_registro_0043" autohotspot="true" unique="false" />
-    <style name="registro_0044" prealign="0|0|0" ox="-1500" oy="0" oz="+250" linkedscene="expodeco_registro_0044" autohotspot="true" unique="false" />
-    <style name="registro_0045" prealign="0|0|0" ox="-1500" oy="0" oz="+125" linkedscene="expodeco_registro_0045" autohotspot="true" unique="false" />
-    <style name="registro_0046" prealign="0|0|0" ox="-1500" oy="0" oz="0" linkedscene="expodeco_registro_0046" autohotspot="true" unique="false" />
+    <style name="registro_0028" prealign="0|0|0" ox="-1600" oy="0" oz="+2250" linkedscene="expodeco_registro_0028" autohotspot="true" unique="false" />
+    <style name="registro_0029" prealign="0|0|0" ox="-1600" oy="0" oz="+2125" linkedscene="expodeco_registro_0029" autohotspot="true" unique="false" />
+    <style name="registro_0030" prealign="0|0|0" ox="-1600" oy="0" oz="+2000" linkedscene="expodeco_registro_0030" autohotspot="true" unique="false" />
+    <style name="registro_0031" prealign="0|0|0" ox="-1600" oy="0" oz="+1875" linkedscene="expodeco_registro_0031" autohotspot="true" unique="false" />
+    <style name="registro_0032" prealign="0|0|0" ox="-1600" oy="0" oz="+1750" linkedscene="expodeco_registro_0032" autohotspot="true" unique="false" />
+    <style name="registro_0033" prealign="0|0|0" ox="-1600" oy="0" oz="+1625" linkedscene="expodeco_registro_0033" autohotspot="true" unique="false" />
+    <style name="registro_0034" prealign="0|0|0" ox="-1600" oy="0" oz="+1500" linkedscene="expodeco_registro_0034" autohotspot="true" unique="false" />
+    <style name="registro_0035" prealign="0|0|0" ox="-1600" oy="0" oz="+1375" linkedscene="expodeco_registro_0035" autohotspot="true" unique="false" />
+    <style name="registro_0036" prealign="0|0|0" ox="-1600" oy="0" oz="+1250" linkedscene="expodeco_registro_0036" autohotspot="true" unique="false" />
+    <style name="registro_0037" prealign="0|0|0" ox="-1600" oy="0" oz="+1125" linkedscene="expodeco_registro_0037" autohotspot="true" unique="false" />
+    <style name="registro_0038" prealign="0|0|0" ox="-1600" oy="0" oz="+1000" linkedscene="expodeco_registro_0038" autohotspot="true" unique="false" />
+    <style name="registro_0039" prealign="0|0|0" ox="-1600" oy="0" oz="+875" linkedscene="expodeco_registro_0039" autohotspot="true" unique="false" />
+    <style name="registro_0040" prealign="0|0|0" ox="-1600" oy="0" oz="+750" linkedscene="expodeco_registro_0040" autohotspot="true" unique="false" />
+    <style name="registro_0041" prealign="0|0|0" ox="-1600" oy="0" oz="+625" linkedscene="expodeco_registro_0041" autohotspot="true" unique="false" />
+    <style name="registro_0042" prealign="0|0|0" ox="-1600" oy="0" oz="+500" linkedscene="expodeco_registro_0042" autohotspot="true" unique="false" />
+    <style name="registro_0043" prealign="0|0|0" ox="-1600" oy="0" oz="+375" linkedscene="expodeco_registro_0043" autohotspot="true" unique="false" />
+    <style name="registro_0044" prealign="0|0|0" ox="-1600" oy="0" oz="+250" linkedscene="expodeco_registro_0044" autohotspot="true" unique="false" />
+    <style name="registro_0045" prealign="0|0|0" ox="-1600" oy="0" oz="+125" linkedscene="expodeco_registro_0045" autohotspot="true" unique="false" />
+    <style name="registro_0046" prealign="0|0|0" ox="-1600" oy="0" oz="0" linkedscene="expodeco_registro_0046" autohotspot="true" unique="false" />
 
-    <style name="registro_0047" prealign="0|0|0" ox="-750" oy="0" oz="+300" linkedscene="expodeco_registro_0047" autohotspot="true" unique="true" />
-    <style name="registro_0048" prealign="0|0|0" ox="-750" oy="0" oz="+1100" linkedscene="expodeco_registro_0048" autohotspot="true" unique="true" />
-    <style name="registro_0049" prealign="0|0|0" ox="-750" oy="0" oz="+1650" linkedscene="expodeco_registro_0049" autohotspot="true" unique="true" />
-    <style name="registro_0050" prealign="0|0|0" ox="-750" oy="0" oz="+2200" linkedscene="expodeco_registro_0050" autohotspot="true" unique="true" />
+    <style name="registro_0047" prealign="0|0|0" ox="-750" oy="0" oz="+300" linkedscene="expodeco_registro_0047" autohotspot="true" unique="false" />
+    <style name="registro_0048" prealign="0|0|0" ox="-750" oy="0" oz="+1000" linkedscene="expodeco_registro_0048" autohotspot="true" unique="false" />
+    <style name="registro_0049" prealign="0|0|0" ox="-750" oy="0" oz="+1650" linkedscene="expodeco_registro_0049" autohotspot="true" unique="false" />
+    <style name="registro_0050" prealign="0|0|0" ox="-750" oy="0" oz="+2350" linkedscene="expodeco_registro_0050" autohotspot="true" unique="false" />
    
+    <style name="registro_0051" prealign="0|0|0" ox="-1300" oy="0" oz="+2350" linkedscene="expodeco_registro_0051" autohotspot="true" unique="false" />
+    <style name="registro_0052" prealign="0|0|0" ox="-1125" oy="0" oz="+2750" linkedscene="expodeco_registro_0052" autohotspot="true" unique="false" />
+    <style name="registro_0053" prealign="0|0|0" ox="-850" oy="0" oz="+2750" linkedscene="expodeco_registro_0053" autohotspot="true" unique="false" />
+    <style name="registro_0054" prealign="0|0|0" ox="-450" oy="0" oz="+2750" linkedscene="expodeco_registro_0054" autohotspot="true" unique="false" />
+
     <!-- Automatically a floor-hotspot at each pano world location -->
 
     <action name="generate_hotspots" autorun="onstart" scope="local">

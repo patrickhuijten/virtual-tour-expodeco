@@ -4,7 +4,7 @@
 	<include url="depth_map_support.xml" />
 	<include url="expodeco_locations.xml" />
 
-	<include url="skin/vtourskin_design_ultra_light.xml" /> 
+	<include url="skin/vtourskin_design_ultra_light.xml" />
 
 	<!-- startup action - load the first scene -->
 	<action name="startup" autorun="onstart">
@@ -151,7 +151,7 @@
 
 	</scene>
 
-	<scene name="expodeco_registro_0012" title="01_REGISTRO.VRayDenoiser.0012" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0012.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="true">
+	<scene name="expodeco_registro_0012" title="01_REGISTRO.VRayDenoiser.0012" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0012.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="false">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="100" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -163,7 +163,7 @@
 		</image>
 
 	</scene>
-	<scene name="expodeco_registro_0013" title="01_REGISTRO.VRayDenoiser.0013" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0013.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="false">
+	<scene name="expodeco_registro_0013" title="01_REGISTRO.VRayDenoiser.0013" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0013.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="true">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="100" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -295,54 +295,7 @@
 		</image>
 
 	</scene>
-	<scene name="expodeco_registro_0024" title="01_REGISTRO.VRayDenoiser.0024" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0024.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="true">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="100" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/01_REGISTRO_VRayDenoiser_0024.tiles/preview.jpg" />
-
-		<image style="registro_0024">
-			<cube url="panos/01_REGISTRO_VRayDenoiser_0024.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-			<depthmap url="depth/01_REGISTRO_VRayZDepth_LimpioCerca.0024.jpg" scale="1.6" offset="0.05" />
-		</image>
-
-	</scene>
-	<scene name="expodeco_registro_0025" title="01_REGISTRO.VRayDenoiser.0025" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0025.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="false">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="100" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/01_REGISTRO_VRayDenoiser_0025.tiles/preview.jpg" />
-
-		<image style="registro_0025">
-			<cube url="panos/01_REGISTRO_VRayDenoiser_0025.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-			<depthmap url="depth/01_REGISTRO_VRayZDepth_LimpioCerca.0025.jpg" scale="1.6" offset="0.05" />
-		</image>
-
-	</scene>
-	<scene name="expodeco_registro_0026" title="01_REGISTRO.VRayDenoiser.0026" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0026.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="false">
-§
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="100" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/01_REGISTRO_VRayDenoiser_0026.tiles/preview.jpg" />
-
-		<image style="registro_0026">
-			<cube url="panos/01_REGISTRO_VRayDenoiser_0026.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-			<depthmap url="depth/01_REGISTRO_VRayZDepth_LimpioCerca.0026.jpg" scale="1.6" offset="0.05" />
-		</image>
-
-	</scene>
-	<scene name="expodeco_registro_0027" title="01_REGISTRO.VRayDenoiser.0027" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0027.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="false">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="100" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/01_REGISTRO_VRayDenoiser_0027.tiles/preview.jpg" />
-
-		<image style="registro_0027">
-			<cube url="panos/01_REGISTRO_VRayDenoiser_0027.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
-			<depthmap url="depth/01_REGISTRO_VRayZDepth_LimpioCerca.0027.jpg" scale="1.6" offset="0.05" />
-		</image>
-
-	</scene>
 	<scene name="expodeco_registro_0028" title="01_REGISTRO.VRayDenoiser.0028" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0028.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="false">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="100" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -427,7 +380,7 @@
 		</image>
 
 	</scene>
-	<scene name="expodeco_registro_0035" title="01_REGISTRO.VRayDenoiser.0035" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0035.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="true">
+	<scene name="expodeco_registro_0035" title="01_REGISTRO.VRayDenoiser.0035" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0035.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="false">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="100" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -439,7 +392,7 @@
 		</image>
 
 	</scene>
-	<scene name="expodeco_registro_0036" title="01_REGISTRO.VRayDenoiser.0036" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0036.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="false">
+	<scene name="expodeco_registro_0036" title="01_REGISTRO.VRayDenoiser.0036" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0036.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="true">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="100" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -583,7 +536,7 @@
 		</image>
 
 	</scene>
-	<scene name="expodeco_registro_0048" title="01_REGISTRO.VRayDenoiser.0048" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0048.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="true">
+	<scene name="expodeco_registro_0048" title="01_REGISTRO.VRayDenoiser.0048" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0048.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="false">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="100" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -607,7 +560,7 @@
 		</image>
 
 	</scene>
-	<scene name="expodeco_registro_0050" title="01_REGISTRO.VRayDenoiser.0050" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0050.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="true">
+	<scene name="expodeco_registro_0050" title="01_REGISTRO.VRayDenoiser.0050" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0050.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="false">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="100" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -616,6 +569,55 @@
 		<image style="registro_0050">
 			<cube url="panos/01_REGISTRO_VRayDenoiser_0050.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
 			<depthmap url="depth/01_REGISTRO_VRayZDepth_LimpioCerca.0050.jpg" scale="1.6" offset="0.05" />
+		</image>
+
+	</scene>
+	<scene name="expodeco_registro_0051" title="01_REGISTRO.VRayDenoiser.0051" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0051.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="false">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="100" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/01_REGISTRO_VRayDenoiser_0051.tiles/preview.jpg" />
+
+		<image style="registro_0051">
+			<cube url="panos/01_REGISTRO_VRayDenoiser_0051.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+			<depthmap url="depth/01_REGISTRO_VRayZDepth_LimpioCerca.0051.jpg" scale="1.6" offset="0.05" />
+		</image>
+
+	</scene>
+	<scene name="expodeco_registro_0052" title="01_REGISTRO.VRayDenoiser.0052" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0052.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="false">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="100" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/01_REGISTRO_VRayDenoiser_0052.tiles/preview.jpg" />
+
+		<image style="registro_0052">
+			<cube url="panos/01_REGISTRO_VRayDenoiser_0052.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+			<depthmap url="depth/01_REGISTRO_VRayZDepth_LimpioCerca.0052.jpg" scale="1.6" offset="0.05" />
+		</image>
+
+	</scene>
+
+	<scene name="expodeco_registro_0053" title="01_REGISTRO.VRayDenoiser.0053" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0053.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="true">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="100" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/01_REGISTRO_VRayDenoiser_0053.tiles/preview.jpg" />
+
+		<image style="registro_0053">
+			<cube url="panos/01_REGISTRO_VRayDenoiser_0053.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+			<depthmap url="depth/01_REGISTRO_VRayZDepth_LimpioCerca.0053.jpg" scale="1.6" offset="0.05" />
+		</image>
+
+	</scene>
+	<scene name="expodeco_registro_0054" title="01_REGISTRO.VRayDenoiser.0054" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0054.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="false">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="100" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/01_REGISTRO_VRayDenoiser_0054.tiles/preview.jpg" />
+
+		<image style="registro_0054">
+			<cube url="panos/01_REGISTRO_VRayDenoiser_0054.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+			<depthmap url="depth/01_REGISTRO_VRayZDepth_LimpioCerca.0054.jpg" scale="1.6" offset="0.05" />
 		</image>
 
 	</scene>
