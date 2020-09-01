@@ -1,0 +1,6 @@
+<krpano>
+	<action name="open_sketchfab">
+    jscall('window.enableSketchfab()');
+	</action>
+
+</krpano>

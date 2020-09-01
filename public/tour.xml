@@ -3,6 +3,7 @@
 	<include url="skin/vtourskin.xml" />
 	<include url="depth_map_support.xml" />
 	<include url="expodeco_locations.xml" />
+	<include url="sketchfab.xml" />
 
 	<include url="skin/vtourskin_design_ultra_light.xml" />
 
@@ -25,7 +26,7 @@
 
 			<depthmap url="depth/01_REGISTRO_VRayZDepth_LimpioCerca.0001.jpg" scale="1.6" offset="0.05" />
 		</image>
-
+		<hotspot name="spot2" url="skin/vtourskin_hotspot.png" zoom="true"      scale="0.5" ath="90"   atv="0" onclick="open_sketchfab()" />
 	</scene>
 
 	<scene name="expodeco_registro_0002" title="01_REGISTRO.VRayDenoiser.0002" onstart="" thumburl="panos/01_REGISTRO_VRayDenoiser_0002.tiles/thumb.jpg" lat="" lng="" heading="" hasthumb="false">

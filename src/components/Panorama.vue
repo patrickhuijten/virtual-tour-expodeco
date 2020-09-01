@@ -4,6 +4,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      panorama: null,
+    };
+  },
   methods: {
     register() {
       const plugin = document.createElement("script");
@@ -20,6 +25,9 @@ export default {
           mobilescale: 1.0,
           passQueryParameters: true,
           bgcolor: "#5f5050",
+          onready: (context) => {
+            this.panorama = context
+          }
         });
       }, 1000);
     },
@@ -30,7 +38,7 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 #pano {
   width: 100%;
   height: 100%;
