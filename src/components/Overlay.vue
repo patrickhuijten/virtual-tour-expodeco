@@ -1,7 +1,7 @@
 <template>
   <div id="overlay">
     <transition name="fade">
-      <SketchfabViewer v-if="sketchfabOpen" @close="this.disableSketchfab" />
+      <SketchfabViewer v-if="sketchfabOpen" @close="this.disableSketchfab" :uid="'e1985362fc304c6a99a3c0787f1ce9fa'" />
     </transition>
   </div>
 </template>

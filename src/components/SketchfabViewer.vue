@@ -3,63 +3,75 @@
     <div class="sketchfab-embed-wrapper">
       <iframe
         id="sketchfab-embed"
+        ref="sketchfab-embed"
         title="A 3D model"
-        :src="src"
+        :src="''"
         frameborder="0"
         allow="autoplay; fullscreen; vr"
         mozallowfullscreen="true"
         webkitallowfullscreen="true"
         sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
       ></iframe>
+      <transition name="fade">
+        <ImageViewer v-if="object_id" :object_data="object_data" @close="object_id = null" />
+      </transition>
     </div>
+
     <div class="backdrop" @click="$emit('close')" />
   </div>
 </template>
 <script>
+import { stand_data } from "../data/stand_data";
+import ImageViewer from "./ImageViewer";
 export default {
+  components: {
+    ImageViewer,
+  },
+  props: {
+    uid: {
+      type: String,
+      default: null,
+    },
+  },
   data() {
     return {
-      src: "",
-      uid: "e1985362fc304c6a99a3c0787f1ce9fa",
-
-      //   src: 'https://sketchfab.com/models/e1985362fc304c6a99a3c0787f1ce9fa/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1',
-      client: null,
+      object_data: null,
       iframe: null,
+      object_id: null,
     };
   },
+  watch: {
+    uid: {
+      immediate: true,
+      handler(val) {
+        this.$nextTick(() => {
+          if (val) this.selectStand(val);
+        });
+      },
+    },
+  },
   methods: {
-    initialize() {
-      this.client.init(this.uid, {
-        success: function onSuccess(api) {
-            console.log('hello')
-          api.start();
-          api.addEventListener("viewerready", function () {
-            // API is ready to use
-            // Insert your code here
-            console.log("Viewer is ready");
-          });
-          api.addEventListener("annotationFocus", function (index) {
-            console.log(index);
-          });
-        },
-        error: function onError() {
-          console.log("Viewer error");
-        },
-      });
+    selectStand(uid) {
+      this.object_data = stand_data.stands[uid];
+      window.initialize(uid);
+    },
+    annotationCallback(id) {
+      this.object_id = id;
+    },
+    configure() {
+      this.iframe = this.$refs["sketchfab-embed"];
+      window.sketchfabClient = new window.Sketchfab(this.iframe);
+      window.annotationCallback = this.annotationCallback;
     },
   },
   mounted() {
-    this.iframe = document.getElementById("sketchfab-embed");
-    this.client = new window.Sketchfab(this.iframe);
-    this.initialize();
+    this.configure();
   },
 };
 </script>
 <style lang="scss" scoped>
 #sketchfab-viewer {
   position: absolute;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
 
   z-index: 1;
   width: 100%;
@@ -75,9 +87,11 @@ export default {
     height: calc(100% - 200px);
     padding: 20px;
     background: white;
+
     iframe {
       width: 100%;
       height: 100%;
+      z-index: 999;
     }
   }
 
