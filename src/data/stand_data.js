@@ -1,6 +1,7 @@
 export const stand_data = {
     stands: {
         "f247bc5818e445e4a51b092a3e584148": {
+            name: 'CHEMA',
             objects: {
                 1: {
                     items: [{

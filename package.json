@@ -13,7 +13,9 @@
   "main": "tour.js",
   "dependencies": {
     "@sketchfab/viewer-api": "^1.8.2",
+    "axios": "^0.20.0",
     "core-js": "^3.6.5",
+    "dotenv": "^8.2.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
