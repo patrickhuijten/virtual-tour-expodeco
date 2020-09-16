@@ -1,11 +1,13 @@
 export const stand_data = {
     "stands": {
-        "e1985362fc304c6a99a3c0787f1ce9fa": {
+        "f247bc5818e445e4a51b092a3e584148": {
             "objects": {
-                "1": {
-                    "title": "hello",
-                    "secondary_title": "world",
-                    "text": "hello world its me"
+                "0": {
+                    "title": "Chema Seal",
+                    "secondary_title": "Más información aquí",
+                    "text": "hello world its me",
+                    "link": "http://www.chema.com.pe/ferreteria/reparacion/chema-seal.html",
+                    "image": "https://via.placeholder.com/1024"
                 }
             }
         }

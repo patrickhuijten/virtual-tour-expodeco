@@ -13,7 +13,7 @@
         sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
       ></iframe>
       <transition name="fade">
-        <ImageViewer v-if="object_id" :object_data="object_data" @close="object_id = null" />
+        <ImageViewer v-if="object_id !== null" :object_data="object_data" @close="object_id = null" />
       </transition>
     </div>
 
@@ -38,6 +38,7 @@ export default {
       object_data: null,
       iframe: null,
       object_id: null,
+      stand_data: null
     };
   },
   watch: {
@@ -52,11 +53,13 @@ export default {
   },
   methods: {
     selectStand(uid) {
-      this.object_data = stand_data.stands[uid];
+      this.stand_data = stand_data.stands[uid]
       window.initialize(uid);
     },
     annotationCallback(id) {
+      console.log(id)
       this.object_id = id;
+      this.object_data = this.stand_data.objects[this.object_id.toString()];
     },
     configure() {
       this.iframe = this.$refs["sketchfab-embed"];

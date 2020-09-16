@@ -1,14 +1,14 @@
 module.exports = {
     css: {
-      loaderOptions: {
-        sass: {
-            additionalData: `@import "@/assets/scss/transitions.scss";`
+        loaderOptions: {
+            sass: {
+                additionalData: `@import "@/assets/scss/main.scss";`
+            }
         }
-      }
     },
     configureWebpack: {
         devServer: {
-          headers: { 'Access-Control-Allow-Origin': '*' }
+            headers: { 'Access-Control-Allow-Origin': '*' }
         }
-      }
-  };
+    }
+};
