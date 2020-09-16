@@ -1,5 +1,6 @@
 <template>
   <div id="sketchfab-viewer">
+    <CloseButton @close="$emit('close')" />
     <div class="sketchfab-embed-wrapper">
       <iframe
         id="sketchfab-embed"
@@ -12,8 +13,12 @@
         webkitallowfullscreen="true"
         sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
       ></iframe>
-      <transition name="fade">
-        <ImageViewer v-if="object_id !== null" :object_data="object_data" @close="object_id = null" />
+      <transition name="slide-fade">
+        <ImageViewer
+          v-if="object_id !== null"
+          :object_data="object_data"
+          @close="object_id = null"
+        />
       </transition>
     </div>
 
@@ -23,9 +28,12 @@
 <script>
 import { stand_data } from "../data/stand_data";
 import ImageViewer from "./ImageViewer";
+import CloseButton from "./CloseButton";
+
 export default {
   components: {
     ImageViewer,
+    CloseButton,
   },
   props: {
     uid: {
@@ -38,7 +46,7 @@ export default {
       object_data: null,
       iframe: null,
       object_id: null,
-      stand_data: null
+      stand_data: null,
     };
   },
   watch: {
@@ -53,13 +61,17 @@ export default {
   },
   methods: {
     selectStand(uid) {
-      this.stand_data = stand_data.stands[uid]
+      this.stand_data = stand_data.stands[uid];
       window.initialize(uid);
     },
     annotationCallback(id) {
-      console.log(id)
-      this.object_id = id;
-      this.object_data = this.stand_data.objects[this.object_id.toString()];
+      console.log(id);
+      if (id >= 0) {
+        this.object_id = id;
+        this.object_data = this.stand_data.objects[this.object_id.toString()];
+      } else {
+        this.object_id = null
+      }
     },
     configure() {
       this.iframe = this.$refs["sketchfab-embed"];
@@ -88,18 +100,20 @@ export default {
     transform: translate(-50%, -50%);
     width: calc(100% - 200px);
     height: calc(100% - 200px);
-    padding: 20px;
+    border: white solid 1px;
     background: white;
+    @include box-shadow;
+    overflow: hidden;
 
     iframe {
       width: 100%;
-      height: 100%;
+      height: calc(100% + 2px);
       z-index: 999;
     }
   }
 
   .backdrop {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);

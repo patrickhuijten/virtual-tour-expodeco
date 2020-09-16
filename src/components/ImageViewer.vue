@@ -1,32 +1,40 @@
-<template>
+  <template>
   <div id="image-viewer">
-    <button class="close" @click="close">❌</button>
-    <div class="image-container">
-      <img :src="object_data.image" />
-    </div>
-    <div class="text-container" v-if="object_data">
-      <h1 v-text="object_data.title" />
-      <h2 v-text="object_data.secondary_title" />
-      <p v-if="object_data.text" v-text="object_data.text" />
-      <button
-        class="link"
-        v-if="object_data.link"
-        v-text="'Discubre mas...'"
-        @click="link_open = true"
-      ></button>
-
-      <transition name="fade">
-        <div class="outside-link" v-if="link_open">
-          <button class="close" @click="link_open = false">❌</button>
-          <iframe :src="object_data.link" />
+    <CloseButton @close="close" />
+    <transition name="slide-fade">
+      <div class="outside-link" v-if="link_open">
+        <CloseButton @close="link_open = false; selected_link = null;" />
+        <iframe frameborder="0" :src="selected_link" />
+      </div>
+    </transition>
+    <div class="item-group">
+      <div class="item-container" v-for="(item, index) in items" :key="index">
+        <div class="image-container">
+          <img :src="item.image" />
         </div>
-      </transition>
+        <div class="text-container" v-if="item">
+          <h1 v-text="item.title" />
+          <h2 v-text="item.secondary_title" />
+          <p v-if="item.text" v-text="item.text" />
+          <button
+            class="link"
+            v-if="item.link"
+            v-text="'Discubre mas...'"
+            @click="selectLink(item.link)"
+          ></button>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import CloseButton from "./CloseButton";
+
 export default {
+  components: {
+    CloseButton,
+  },
   props: {
     object_data: {
       type: Object,
@@ -36,11 +44,27 @@ export default {
   data() {
     return {
       link_open: false,
+      selected_link: null,
+      item_index: 0,
     };
+  },
+  computed: {
+    items() {
+      return this.object_data ? this.object_data.items : [];
+    },
+    current_item() {
+      return this.items.length > 0 && this.items.length > this.item_index
+        ? this.items[this.item_index]
+        : null;
+    },
   },
   methods: {
     close() {
       this.$emit("close");
+    },
+    selectLink(link) {
+      this.selected_link = link;
+      this.link_open = true;
     },
   },
 };
@@ -48,64 +72,75 @@ export default {
 <style lang="scss" scoped>
 #image-viewer {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 60px;
+  left: 50px;
   background: white;
-  width: 100%;
-  height: 100%;
-
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
-  grid-template-rows: 0.5fr;
-  grid-column-gap: 2rem;
-  align-content: center;
-  padding: 2rem;
-  button.close {
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  @include box-shadow;
+  .outside-link {
+    background: white;
     position: absolute;
     top: 0;
-    right: 0;
-    background: none;
-    border-style: none;
-    outline: none;
-
-    width: 50px;
-    height: 50px;
-    transform: translateY(-50px);
-    font-size: 2rem;
-  }
-  .image-container {
-    width: 100%;
-    height: 100%;
-    background: #eee;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-  .text-container {
+    left: 0;
     width: 100%;
     height: 100%;
 
-    .link {
-      background: black;
-      border-style: none;
-      outline: none;
-      color: white;
-    }
+    z-index: 99999;
+  @include box-shadow;
 
-    .outside-link {
-      position: fixed;
-      top: 0;
-      left: 0;
+    iframe {
+      position: absolute;
       width: 100%;
       height: 100%;
+    }
+  }
+  .item-group {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(400px, 50%);
+    grid-auto-flow: row;
+    align-content: flex-start;
 
-      iframe {
-        position: absolute;
+    padding: 2rem;
+    overflow: auto;
+
+    .item-container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 100%;
+      grid-column-gap: 2rem;
+      padding-bottom: 2rem;
+      .image-container {
+        height: 100%;
+        background: #eee;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .text-container {
+        position: relative;
         width: 100%;
         height: 100%;
+
+        .link {
+          position: absolute;
+          bottom: 0;
+          background: black;
+          border: none;
+          outline: none;
+          color: white;
+          padding: 1rem 2rem;
+          cursor: pointer;
+
+          -webkit-appearance: none;
+          -moz-appearance: none;
+        }
       }
     }
   }

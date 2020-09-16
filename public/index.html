@@ -15,20 +15,26 @@
         function initialize(uid) {
             window.sketchfabClient.init(uid, {
                 success: function onSuccess(api) {
-                    console.log('hello')
                     api.start();
                     api.addEventListener("viewerready", function() {
                         // API is ready to use
                         // Insert your code here
                         console.log("Viewer is ready");
                     });
-                    api.addEventListener("annotationFocus", function(index) {
+                    api.addEventListener("annotationSelect", function(index) {
                         window.annotationCallback(index)
                     });
                 },
                 error: function onError() {
                     console.log("Viewer error");
                 },
+                navigation: 'fps',
+                annotation_tooltip_visible: 0,
+                ui_controls: 0,
+                ui_fullscreen: 0,
+                ui_help: 0,
+                ui_inspector: 0,
+                ui_stop: 0
             });
         }
     </script>

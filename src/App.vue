@@ -23,6 +23,7 @@ export default {
 }
 body {
   margin: 0;
+  overflow: hidden;
 }
 #app {
   position: relative;
