@@ -15,7 +15,6 @@
         function initialize(uid) {
             window.sketchfabClient.init(uid, {
                 success: function onSuccess(api) {
-                    api.start();
                     api.addEventListener("viewerready", function() {
                         // API is ready to use
                         // Insert your code here
@@ -24,7 +23,7 @@
                     api.addEventListener("annotationSelect", function(index) {
                         setTimeout(() => {
                             window.annotationCallback(index)
-                        }, 1000);
+                        }, 600);
                     });
                 },
                 error: function onError() {
@@ -36,7 +35,8 @@
                 ui_fullscreen: 0,
                 ui_help: 0,
                 ui_inspector: 0,
-                ui_stop: 0
+                ui_stop: 0,
+                autostart: 1
             });
         }
     </script>

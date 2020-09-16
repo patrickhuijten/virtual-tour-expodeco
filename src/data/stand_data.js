@@ -19,6 +19,23 @@ export const stand_data = {
                         }
                     ]
                 },
+                2: {
+                    items: [{
+                            title: "Bella Laja Mate",
+                            secondary_title: "Más información aquí",
+                            text: "",
+                            link: "http://www.chema.com.pe/marcas/chema/bella-laja-mate.html",
+                            image: "https://via.placeholder.com/1024"
+                        },
+                        {
+                            title: "Chema Vista Eco",
+                            secondary_title: "Más información aquí",
+                            text: "",
+                            link: "http://www.chema.com.pe/marcas/chema/chema-vista.html",
+                            image: "https://via.placeholder.com/1024"
+                        }
+                    ]
+                },
                 3: {
                     items: [{
                         title: "Chemayolic Interiores",
