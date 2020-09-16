@@ -7,7 +7,7 @@
         <iframe frameborder="0" :src="selected_link" />
       </div>
     </transition>
-    <div class="item-group">
+    <div class="item-group" :class="{'single':items.length === 1}"> 
       <div class="item-container" v-for="(item, index) in items" :key="index">
         <div class="image-container">
           <img :src="item.image" />
@@ -103,6 +103,10 @@ export default {
     grid-auto-rows: minmax(400px, 50%);
     grid-auto-flow: row;
     align-content: flex-start;
+
+    &.single {
+      align-content: center;
+    }
 
     padding: 2rem;
     overflow: auto;

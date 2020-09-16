@@ -22,13 +22,15 @@
                         console.log("Viewer is ready");
                     });
                     api.addEventListener("annotationSelect", function(index) {
-                        window.annotationCallback(index)
+                        setTimeout(() => {
+                            window.annotationCallback(index)
+                        }, 1000);
                     });
                 },
                 error: function onError() {
                     console.log("Viewer error");
                 },
-                navigation: 'fps',
+                navigation: 'orbit',
                 annotation_tooltip_visible: 0,
                 ui_controls: 0,
                 ui_fullscreen: 0,

@@ -6,7 +6,7 @@
         id="sketchfab-embed"
         ref="sketchfab-embed"
         title="A 3D model"
-        :src="''"
+        src
         frameborder="0"
         allow="autoplay; fullscreen; vr"
         mozallowfullscreen="true"
@@ -68,9 +68,9 @@ export default {
       console.log(id);
       if (id >= 0) {
         this.object_id = id;
-        this.object_data = this.stand_data.objects[this.object_id.toString()];
+        this.object_data = this.stand_data.objects[this.object_id + 1];
       } else {
-        this.object_id = null
+        this.object_id = null;
       }
     },
     configure() {
@@ -100,15 +100,17 @@ export default {
     transform: translate(-50%, -50%);
     width: calc(100% - 200px);
     height: calc(100% - 200px);
-    border: white solid 1px;
+    border: #333 solid 2px;
     background: white;
     @include box-shadow;
     overflow: hidden;
 
     iframe {
       width: 100%;
-      height: calc(100% + 2px);
+      height: 100%;
+      transform: scale(1.005);
       z-index: 999;
+      border: none;
     }
   }
 
