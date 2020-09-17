@@ -1,0 +1,2072 @@
+<krpano>
+    <scene name="scene_PRUEBA_VRayDenoiser_0001"
+        title="PRUEBA.VRayDenoiser.0001"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0001.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="true">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0001.tiles/preview.jpg" />
+
+        <image style="carpa_0001">
+            <cube url="/panos/PRUEBA_VRayDenoiser_0001.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+        <hotspot name="STAND_b86a973c9a6e47048e4daed480779076"
+            url="/skin/expand.png"
+            zoom="true"
+            scale="0.125"
+            ath="-45"
+            atv="0"
+            torigin="image"
+            onclick="open_sketchfab('b86a973c9a6e47048e4daed480779076')" />
+
+              <hotspot name="STAND_76a0e59d2efd4336b7d2bb5b4da22206"
+            url="/skin/expand.png"
+            zoom="true"
+            scale="0.125"
+            ath="-120"
+            atv="0"
+            torigin="image"
+            onclick="open_sketchfab('76a0e59d2efd4336b7d2bb5b4da22206')" />
+        <!-- b86a973c9a6e47048e4daed480779076-->
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0002"
+        title="PRUEBA.VRayDenoiser.0002"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0002.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0002.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0002.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0003"
+        title="PRUEBA.VRayDenoiser.0003"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0003.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0003.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0003.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0004"
+        title="PRUEBA.VRayDenoiser.0004"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0004.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0004.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0004.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0005"
+        title="PRUEBA.VRayDenoiser.0005"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0005.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0005.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0005.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0006"
+        title="PRUEBA.VRayDenoiser.0006"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0006.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0006.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0006.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0007"
+        title="PRUEBA.VRayDenoiser.0007"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0007.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0007.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0007.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0008"
+        title="PRUEBA.VRayDenoiser.0008"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0008.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0008.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0008.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0009"
+        title="PRUEBA.VRayDenoiser.0009"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0009.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0009.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0009.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0010"
+        title="PRUEBA.VRayDenoiser.0010"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0010.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0010.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0010.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0011"
+        title="PRUEBA.VRayDenoiser.0011"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0011.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0011.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0011.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0012"
+        title="PRUEBA.VRayDenoiser.0012"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0012.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0012.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0012.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0013"
+        title="PRUEBA.VRayDenoiser.0013"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0013.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0013.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0013.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0014"
+        title="PRUEBA.VRayDenoiser.0014"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0014.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0014.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0014.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0015"
+        title="PRUEBA.VRayDenoiser.0015"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0015.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0015.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0015.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0016"
+        title="PRUEBA.VRayDenoiser.0016"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0016.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0016.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0016.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0017"
+        title="PRUEBA.VRayDenoiser.0017"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0017.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0017.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0017.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0018"
+        title="PRUEBA.VRayDenoiser.0018"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0018.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0018.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0018.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0019"
+        title="PRUEBA.VRayDenoiser.0019"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0019.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0019.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0019.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0020"
+        title="PRUEBA.VRayDenoiser.0020"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0020.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0020.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0020.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0021"
+        title="PRUEBA.VRayDenoiser.0021"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0021.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0021.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0021.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0022"
+        title="PRUEBA.VRayDenoiser.0022"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0022.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0022.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0022.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0023"
+        title="PRUEBA.VRayDenoiser.0023"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0023.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0023.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0023.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0024"
+        title="PRUEBA.VRayDenoiser.0024"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0024.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0024.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0024.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0025"
+        title="PRUEBA.VRayDenoiser.0025"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0025.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0025.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0025.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0026"
+        title="PRUEBA.VRayDenoiser.0026"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0026.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0026.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0026.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0027"
+        title="PRUEBA.VRayDenoiser.0027"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0027.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0027.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0027.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0028"
+        title="PRUEBA.VRayDenoiser.0028"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0028.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0028.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0028.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0029"
+        title="PRUEBA.VRayDenoiser.0029"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0029.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0029.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0029.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0030"
+        title="PRUEBA.VRayDenoiser.0030"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0030.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0030.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0030.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0031"
+        title="PRUEBA.VRayDenoiser.0031"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0031.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0031.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0031.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0032"
+        title="PRUEBA.VRayDenoiser.0032"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0032.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0032.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0032.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0033"
+        title="PRUEBA.VRayDenoiser.0033"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0033.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0033.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0033.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0034"
+        title="PRUEBA.VRayDenoiser.0034"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0034.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0034.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0034.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0035"
+        title="PRUEBA.VRayDenoiser.0035"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0035.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0035.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0035.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0036"
+        title="PRUEBA.VRayDenoiser.0036"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0036.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0036.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0036.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0037"
+        title="PRUEBA.VRayDenoiser.0037"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0037.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0037.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0037.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0038"
+        title="PRUEBA.VRayDenoiser.0038"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0038.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0038.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0038.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0039"
+        title="PRUEBA.VRayDenoiser.0039"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0039.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0039.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0039.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0040"
+        title="PRUEBA.VRayDenoiser.0040"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0040.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0040.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0040.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0041"
+        title="PRUEBA.VRayDenoiser.0041"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0041.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0041.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0041.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0042"
+        title="PRUEBA.VRayDenoiser.0042"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0042.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0042.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0042.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0043"
+        title="PRUEBA.VRayDenoiser.0043"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0043.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0043.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0043.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0044"
+        title="PRUEBA.VRayDenoiser.0044"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0044.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0044.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0044.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0045"
+        title="PRUEBA.VRayDenoiser.0045"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0045.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0045.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0045.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0046"
+        title="PRUEBA.VRayDenoiser.0046"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0046.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0046.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0046.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0047"
+        title="PRUEBA.VRayDenoiser.0047"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0047.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0047.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0047.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0048"
+        title="PRUEBA.VRayDenoiser.0048"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0048.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0048.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0048.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0049"
+        title="PRUEBA.VRayDenoiser.0049"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0049.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0049.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0049.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0050"
+        title="PRUEBA.VRayDenoiser.0050"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0050.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0050.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0050.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0051"
+        title="PRUEBA.VRayDenoiser.0051"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0051.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0051.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0051.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0052"
+        title="PRUEBA.VRayDenoiser.0052"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0052.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0052.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0052.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0053"
+        title="PRUEBA.VRayDenoiser.0053"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0053.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0053.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0053.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0054"
+        title="PRUEBA.VRayDenoiser.0054"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0054.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0054.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0054.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0055"
+        title="PRUEBA.VRayDenoiser.0055"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0055.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0055.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0055.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0056"
+        title="PRUEBA.VRayDenoiser.0056"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0056.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0056.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0056.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0057"
+        title="PRUEBA.VRayDenoiser.0057"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0057.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0057.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0057.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0058"
+        title="PRUEBA.VRayDenoiser.0058"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0058.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0058.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0058.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0059"
+        title="PRUEBA.VRayDenoiser.0059"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0059.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0059.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0059.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0060"
+        title="PRUEBA.VRayDenoiser.0060"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0060.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0060.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0060.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0061"
+        title="PRUEBA.VRayDenoiser.0061"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0061.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0061.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0061.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0062"
+        title="PRUEBA.VRayDenoiser.0062"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0062.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0062.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0062.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0063"
+        title="PRUEBA.VRayDenoiser.0063"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0063.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0063.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0063.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0064"
+        title="PRUEBA.VRayDenoiser.0064"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0064.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0064.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0064.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0065"
+        title="PRUEBA.VRayDenoiser.0065"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0065.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0065.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0065.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0066"
+        title="PRUEBA.VRayDenoiser.0066"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0066.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0066.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0066.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0067"
+        title="PRUEBA.VRayDenoiser.0067"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0067.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0067.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0067.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0068"
+        title="PRUEBA.VRayDenoiser.0068"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0068.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0068.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0068.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0069"
+        title="PRUEBA.VRayDenoiser.0069"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0069.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0069.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0069.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0070"
+        title="PRUEBA.VRayDenoiser.0070"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0070.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0070.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0070.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0071"
+        title="PRUEBA.VRayDenoiser.0071"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0071.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0071.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0071.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0072"
+        title="PRUEBA.VRayDenoiser.0072"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0072.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0072.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0072.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0073"
+        title="PRUEBA.VRayDenoiser.0073"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0073.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0073.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0073.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0074"
+        title="PRUEBA.VRayDenoiser.0074"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0074.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0074.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0074.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0075"
+        title="PRUEBA.VRayDenoiser.0075"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0075.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0075.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0075.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_PRUEBA_VRayDenoiser_0076"
+        title="PRUEBA.VRayDenoiser.0076"
+        onstart=""
+        thumburl="/panos/PRUEBA_VRayDenoiser_0076.tiles/thumb.jpg"
+        lat=""
+        lng=""
+        heading=""
+        hasthumb="false">
+
+        <view hlookat="0.0"
+            vlookat="0.0"
+            fovtype="MFOV"
+            fov="120"
+            maxpixelzoom="2.0"
+            fovmin="70"
+            fovmax="140"
+            limitview="auto" />
+
+        <preview url="/panos/PRUEBA_VRayDenoiser_0076.tiles/preview.jpg" />
+
+        <image>
+            <cube url="/panos/PRUEBA_VRayDenoiser_0076.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+                multires="512,640,1280,2560" />
+        </image>
+
+    </scene>
+</krpano>

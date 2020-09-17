@@ -55,9 +55,10 @@
     <style name="registro_0052" prealign="0|0|0" ox="-1125" oy="0" oz="+2750" linkedscene="expodeco_registro_0052" autohotspot="true" unique="false" />
     <style name="registro_0053" prealign="0|0|0" ox="-850" oy="0" oz="+2750" linkedscene="expodeco_registro_0053" autohotspot="true" unique="false" />
     <style name="registro_0054" prealign="0|0|0" ox="-450" oy="0" oz="+2750" linkedscene="expodeco_registro_0054" autohotspot="true" unique="false" />
+   
+    <style name="carpa_0001" prealign="0|0|0" ox="-450" oy="0" oz="+4000" linkedscene="scene_PRUEBA_VRayDenoiser_0001" autohotspot="true" unique="false" />
 
     <!-- Automatically a floor-hotspot at each pano world location -->
-
     <action name="generate_hotspots" autorun="onstart" scope="local">
         if(true, 
             set(floorheight, 180.0);

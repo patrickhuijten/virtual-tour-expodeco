@@ -1,12 +1,12 @@
 <template>
   <div id="overlay">
     <transition name="fade">
-      <SketchfabViewer v-if="sketchfabOpen" @close="this.disableSketchfab" :uid="'f247bc5818e445e4a51b092a3e584148'" />
+      <SketchfabViewer v-if="sketchfabOpen" @close="this.disableSketchfab" :uid="uid" />
     </transition>
   </div>
 </template>
 <script>
-import SketchfabViewer from "./SketchfabViewer";
+import SketchfabViewer from "./SketchfabViewer"
 export default {
   components: {
     SketchfabViewer,
@@ -14,19 +14,22 @@ export default {
   data() {
     return {
       sketchfabOpen: false,
+      uid: null
     };
   },
   methods: {
-    enableSketchfab() {
-      this.sketchfabOpen = true;
+    enableSketchfab(uid) {
+      this.uid = uid
+      this.sketchfabOpen = true
+      console.log(uid)
     },
     disableSketchfab() {
-      this.sketchfabOpen = false;
+      this.sketchfabOpen = false
     },
   },
   mounted() {
-    window.enableSketchfab = this.enableSketchfab;
-    window.disableSketchfab = this.disableSketchfab;
+    window.enableSketchfab = this.enableSketchfab
+    window.disableSketchfab = this.disableSketchfab
   },
 };
 </script>
