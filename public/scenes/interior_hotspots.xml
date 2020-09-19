@@ -1,0 +1,89 @@
+<krpano>
+	<!-- row 1, right to left -->
+	<style name="carpa_0001" prealign="0|0|0" ox="-300" oy="0" oz="+4000" linkedscene="scene_00_CARPA0001" autohotspot="true" unique="false" />
+	<style name="carpa_0002" prealign="0|0|0" ox="-600" oy="0" oz="+4000" linkedscene="scene_00_CARPA0002" autohotspot="true" unique="false" />
+	<style name="carpa_0003" prealign="0|0|0" ox="-900" oy="0" oz="+4000" linkedscene="scene_00_CARPA0003" autohotspot="true" unique="false" />
+	<style name="carpa_0004" prealign="0|0|0" ox="-1200" oy="0" oz="+4000" linkedscene="scene_00_CARPA0004" autohotspot="true" unique="false" />
+	<style name="carpa_0005" prealign="0|0|0" ox="-1500" oy="0" oz="+4000" linkedscene="scene_00_CARPA0005" autohotspot="true" unique="false" />
+	<style name="carpa_0006" prealign="0|0|0" ox="-1800" oy="0" oz="+4000" linkedscene="scene_00_CARPA0006" autohotspot="true" unique="false" />
+	<style name="carpa_0007" prealign="0|0|0" ox="-2100" oy="0" oz="+4000" linkedscene="scene_00_CARPA0007" autohotspot="true" unique="false" />
+	<style name="carpa_0008" prealign="0|0|0" ox="-2400" oy="0" oz="+4000" linkedscene="scene_00_CARPA0008" autohotspot="true" unique="false" />
+	<style name="carpa_0009" prealign="0|0|0" ox="-2700" oy="0" oz="+4000" linkedscene="scene_00_CARPA0009" autohotspot="true" unique="false" />
+	<!-- row 2, left to right -->
+	<style name="carpa_0010" prealign="0|0|0" ox="-2100" oy="0" oz="+4300" linkedscene="scene_00_CARPA0010" autohotspot="true" unique="false" />
+	<style name="carpa_0011" prealign="0|0|0" ox="-1500" oy="0" oz="+4300" linkedscene="scene_00_CARPA0011" autohotspot="true" unique="false" />
+	<style name="carpa_0012" prealign="0|0|0" ox="-900" oy="0" oz="+4300" linkedscene="scene_00_CARPA0012" autohotspot="true" unique="false" />
+	<style name="carpa_0013" prealign="0|0|0" ox="-300" oy="0" oz="+4300" linkedscene="scene_00_CARPA0013" autohotspot="true" unique="false" />
+	<!-- row 3, right to left -->
+	<style name="carpa_0014" prealign="0|0|0" ox="-300" oy="0" oz="+4600" linkedscene="scene_00_CARPA0014" autohotspot="true" unique="false" />
+	<style name="carpa_0015" prealign="0|0|0" ox="-600" oy="0" oz="+4600" linkedscene="scene_00_CARPA0015" autohotspot="true" unique="false" />
+	<style name="carpa_0016" prealign="0|0|0" ox="-900" oy="0" oz="+4600" linkedscene="scene_00_CARPA0016" autohotspot="true" unique="false" />
+	<style name="carpa_0017" prealign="0|0|0" ox="-1200" oy="0" oz="+4600" linkedscene="scene_00_CARPA0017" autohotspot="true" unique="false" />
+	<style name="carpa_0018" prealign="0|0|0" ox="-1500" oy="0" oz="+4600" linkedscene="scene_00_CARPA0018" autohotspot="true" unique="false" />
+	<style name="carpa_0019" prealign="0|0|0" ox="-1800" oy="0" oz="+4600" linkedscene="scene_00_CARPA0019" autohotspot="true" unique="false" />
+	<style name="carpa_0020" prealign="0|0|0" ox="-2100" oy="0" oz="+4600" linkedscene="scene_00_CARPA0020" autohotspot="true" unique="false" />
+	<style name="carpa_0021" prealign="0|0|0" ox="-2700" oy="0" oz="+4600" linkedscene="scene_00_CARPA0021" autohotspot="true" unique="false" />
+	<!-- row 4, left to right -->
+	<style name="carpa_0022" prealign="0|0|0" ox="-2100" oy="0" oz="+4900" linkedscene="scene_00_CARPA0022" autohotspot="true" unique="false" />
+	<style name="carpa_0023" prealign="0|0|0" ox="-1500" oy="0" oz="+4900" linkedscene="scene_00_CARPA0023" autohotspot="true" unique="false" />
+	<style name="carpa_0024" prealign="0|0|0" ox="-900" oy="0" oz="+4900" linkedscene="scene_00_CARPA0024" autohotspot="true" unique="false" />
+	<style name="carpa_0025" prealign="0|0|0" ox="-300" oy="0" oz="+4900" linkedscene="scene_00_CARPA0025" autohotspot="true" unique="false" />
+	<!-- row 5, right to left -->
+	<style name="carpa_0026" prealign="0|0|0" ox="-300" oy="0" oz="+5200" linkedscene="scene_00_CARPA0026" autohotspot="true" unique="false" />
+	<style name="carpa_0027" prealign="0|0|0" ox="-600" oy="0" oz="+5200" linkedscene="scene_00_CARPA0027" autohotspot="true" unique="false" />
+	<style name="carpa_0028" prealign="0|0|0" ox="-900" oy="0" oz="+5200" linkedscene="scene_00_CARPA0028" autohotspot="true" unique="false" />
+	<style name="carpa_0029" prealign="0|0|0" ox="-1200" oy="0" oz="+5200" linkedscene="scene_00_CARPA0029" autohotspot="true" unique="false" />
+	<style name="carpa_0030" prealign="0|0|0" ox="-1500" oy="0" oz="+5200" linkedscene="scene_00_CARPA0030" autohotspot="true" unique="false" />
+	<style name="carpa_0031" prealign="0|0|0" ox="-1800" oy="0" oz="+5200" linkedscene="scene_00_CARPA0031" autohotspot="true" unique="false" />
+	<style name="carpa_0032" prealign="0|0|0" ox="-2100" oy="0" oz="+5200" linkedscene="scene_00_CARPA0032" autohotspot="true" unique="false" />
+	<style name="carpa_0033" prealign="0|0|0" ox="-2400" oy="0" oz="+5200" linkedscene="scene_00_CARPA0033" autohotspot="true" unique="false" />
+	<style name="carpa_0034" prealign="0|0|0" ox="-2700" oy="0" oz="+5200" linkedscene="scene_00_CARPA0034" autohotspot="true" unique="false" />
+	<!-- row 6, left to right -->
+	<style name="carpa_0035" prealign="0|0|0" ox="-2700" oy="0" oz="+5500" linkedscene="scene_00_CARPA0035" autohotspot="true" unique="false" />
+	<style name="carpa_0036" prealign="0|0|0" ox="-2100" oy="0" oz="+5500" linkedscene="scene_00_CARPA0036" autohotspot="true" unique="false" />
+	<style name="carpa_0037" prealign="0|0|0" ox="-1500" oy="0" oz="+5500" linkedscene="scene_00_CARPA0037" autohotspot="true" unique="false" />
+	<style name="carpa_0038" prealign="0|0|0" ox="-1200" oy="0" oz="+5500" linkedscene="scene_00_CARPA0038" autohotspot="true" unique="false" />
+	<style name="carpa_0039" prealign="0|0|0" ox="-900" oy="0" oz="+5350" linkedscene="scene_00_CARPA0039" autohotspot="true" unique="false" />
+	<style name="carpa_0040" prealign="0|0|0" ox="-250" oy="0" oz="+5500" linkedscene="scene_00_CARPA0040" autohotspot="true" unique="false" />
+	<!-- row 7, right to left -->
+	<style name="carpa_0041" prealign="0|0|0" ox="-300" oy="0" oz="+5800" linkedscene="scene_00_CARPA0041" autohotspot="true" unique="false" />
+	<style name="carpa_0042" prealign="0|0|0" ox="-600" oy="0" oz="+5750" linkedscene="scene_00_CARPA0042" autohotspot="true" unique="false" />
+	<style name="carpa_0043" prealign="0|0|0" ox="-900" oy="0" oz="+5750" linkedscene="scene_00_CARPA0043" autohotspot="true" unique="false" />
+	<style name="carpa_0044" prealign="0|0|0" ox="-1500" oy="0" oz="+5800" linkedscene="scene_00_CARPA0044" autohotspot="true" unique="false" />
+	<style name="carpa_0045" prealign="0|0|0" ox="-1800" oy="0" oz="+5800" linkedscene="scene_00_CARPA0045" autohotspot="true" unique="false" />
+	<style name="carpa_0046" prealign="0|0|0" ox="-2100" oy="0" oz="+5800" linkedscene="scene_00_CARPA0046" autohotspot="true" unique="false" />
+	<style name="carpa_0047" prealign="0|0|0" ox="-2400" oy="0" oz="+5800" linkedscene="scene_00_CARPA0047" autohotspot="true" unique="false" />
+	<style name="carpa_0048" prealign="0|0|0" ox="-2700" oy="0" oz="+5800" linkedscene="scene_00_CARPA0048" autohotspot="true" unique="false" />
+	<!-- row 8, left to right -->
+	<style name="carpa_0049" prealign="0|0|0" ox="-2700" oy="0" oz="+6100" linkedscene="scene_00_CARPA0049" autohotspot="true" unique="false" />
+	<style name="carpa_0050" prealign="0|0|0" ox="-2100" oy="0" oz="+6100" linkedscene="scene_00_CARPA0050" autohotspot="true" unique="false" />
+	<style name="carpa_0051" prealign="0|0|0" ox="-1500" oy="0" oz="+6100" linkedscene="scene_00_CARPA0051" autohotspot="true" unique="false" />
+	<style name="carpa_0052" prealign="0|0|0" ox="-900" oy="0" oz="+6000" linkedscene="scene_00_CARPA0052" autohotspot="true" unique="false" />
+	<style name="carpa_0053" prealign="0|0|0" ox="-300" oy="0" oz="+6000" linkedscene="scene_00_CARPA0053" autohotspot="true" unique="false" />
+	<!-- row 9, right to left -->
+	<style name="carpa_0054" prealign="0|0|0" ox="-300" oy="0" oz="+6400" linkedscene="scene_00_CARPA0054" autohotspot="true" unique="false" />
+	<style name="carpa_0055" prealign="0|0|0" ox="-600" oy="0" oz="+6400" linkedscene="scene_00_CARPA0055" autohotspot="true" unique="false" />
+	<style name="carpa_0056" prealign="0|0|0" ox="-900" oy="0" oz="+6450" linkedscene="scene_00_CARPA0056" autohotspot="true" unique="false" />
+	<style name="carpa_0057" prealign="0|0|0" ox="-1200" oy="0" oz="+6350" linkedscene="scene_00_CARPA0057" autohotspot="true" unique="false" />
+	<style name="carpa_0058" prealign="0|0|0" ox="-1500" oy="0" oz="+6450" linkedscene="scene_00_CARPA0058" autohotspot="true" unique="false" />
+	<style name="carpa_0059" prealign="0|0|0" ox="-1800" oy="0" oz="+6450" linkedscene="scene_00_CARPA0059" autohotspot="true" unique="false" />
+	<style name="carpa_0060" prealign="0|0|0" ox="-2100" oy="0" oz="+6450" linkedscene="scene_00_CARPA0060" autohotspot="true" unique="false" />
+	<style name="carpa_0061" prealign="0|0|0" ox="-2400" oy="0" oz="+6400" linkedscene="scene_00_CARPA0061" autohotspot="true" unique="false" />
+	<style name="carpa_0062" prealign="0|0|0" ox="-2700" oy="0" oz="+6400" linkedscene="scene_00_CARPA0062" autohotspot="true" unique="false" />
+	<!-- row 10, left to right -->
+	<style name="carpa_0063" prealign="0|0|0" ox="-2700" oy="0" oz="+6700" linkedscene="scene_00_CARPA0063" autohotspot="true" unique="false" />
+	<style name="carpa_0064" prealign="0|0|0" ox="-2100" oy="0" oz="+6700" linkedscene="scene_00_CARPA0064" autohotspot="true" unique="false" />
+	<style name="carpa_0065" prealign="0|0|0" ox="-1500" oy="0" oz="+6700" linkedscene="scene_00_CARPA0065" autohotspot="true" unique="false" />
+	<style name="carpa_0066" prealign="0|0|0" ox="-900" oy="0" oz="+6700" linkedscene="scene_00_CARPA0066" autohotspot="true" unique="false" />
+	<style name="carpa_0067" prealign="0|0|0" ox="-300" oy="0" oz="+6700" linkedscene="scene_00_CARPA0067" autohotspot="true" unique="false" />
+	<!-- row 11, right to left -->
+	<style name="carpa_0068" prealign="0|0|0" ox="-300" oy="0" oz="+7000" linkedscene="scene_00_CARPA0068" autohotspot="true" unique="false" />
+	<style name="carpa_0069" prealign="0|0|0" ox="-600" oy="0" oz="+7000" linkedscene="scene_00_CARPA0069" autohotspot="true" unique="false" />
+	<style name="carpa_0070" prealign="0|0|0" ox="-900" oy="0" oz="+7000" linkedscene="scene_00_CARPA0070" autohotspot="true" unique="false" />
+	<style name="carpa_0071" prealign="0|0|0" ox="-1200" oy="0" oz="+7000" linkedscene="scene_00_CARPA0071" autohotspot="true" unique="false" />
+	<style name="carpa_0072" prealign="0|0|0" ox="-1500" oy="0" oz="+7000" linkedscene="scene_00_CARPA0072" autohotspot="true" unique="false" />
+	<style name="carpa_0073" prealign="0|0|0" ox="-1800" oy="0" oz="+7000" linkedscene="scene_00_CARPA0073" autohotspot="true" unique="false" />
+	<style name="carpa_0074" prealign="0|0|0" ox="-2100" oy="0" oz="+7000" linkedscene="scene_00_CARPA0074" autohotspot="true" unique="false" />
+	<style name="carpa_0075" prealign="0|0|0" ox="-2400" oy="0" oz="+7000" linkedscene="scene_00_CARPA0075" autohotspot="true" unique="false" />
+	<style name="carpa_0076" prealign="0|0|0" ox="-2700" oy="0" oz="+7000" linkedscene="scene_00_CARPA0076" autohotspot="true" unique="false" />
+</krpano>

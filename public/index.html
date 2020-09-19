@@ -24,7 +24,7 @@
                         setTimeout(() => {
                             window.annotationCallback(index)
                         }, 600);
-                    });
+                    })
                 },
                 error: function onError() {
                     console.log("Viewer error");
@@ -36,7 +36,9 @@
                 ui_help: 0,
                 ui_inspector: 0,
                 ui_stop: 0,
-                autostart: 1
+                autostart: 1,
+                transparent: 1,
+                orbit_constraint_pitch_down: -45
             });
         }
     </script>

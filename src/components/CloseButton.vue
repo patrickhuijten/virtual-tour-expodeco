@@ -1,5 +1,5 @@
 <template>
-  <button class="close" @click="$emit('close')">
+  <button class="close" @click="$emit('close')" @keydown.esc="$emit('close')" ref="close" >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -19,10 +19,17 @@
     </svg>
   </button>
 </template>
+<script>
+export default {
+  mounted() {
+    this.$refs['close'].focus()
+  }
+}
+</script>
 <style lang="scss" scoped>
   button.close {
     position: absolute;
-    top: 0;
+    top: -50px;
     right: 0;
     background: none;
     border: none;
@@ -30,7 +37,7 @@
 
     width: 50px;
     height: 50px;
-    transform: translateY(-50px);
+    z-index: 99999;
 
     svg {
         transform: scale(0.5);

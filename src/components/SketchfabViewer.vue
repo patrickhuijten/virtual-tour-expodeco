@@ -1,6 +1,6 @@
 <template>
   <div id="sketchfab-viewer">
-    <CloseButton @close="$emit('close')" />
+    <CloseButton @close="$emit('close')" style="right: 50px; top: 0px;" ref="close" />
     <div class="sketchfab-embed-wrapper">
       <iframe
         id="sketchfab-embed"
@@ -58,6 +58,13 @@ export default {
         });
       },
     },
+    object_id(val) {
+      if (val === null) {
+        if (this.$refs["close"]) {
+          this.$refs["close"].focus();
+        }
+      }
+    },
   },
   methods: {
     selectStand(uid) {
@@ -98,11 +105,9 @@ export default {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: calc(100% - 200px);
-    height: calc(100% - 200px);
-    border: #333 solid 2px;
-    background: white;
-    @include box-shadow;
+    width: calc(100%);
+    height: calc(100%);
+    //@include box-shadow;
     overflow: hidden;
 
     iframe {
