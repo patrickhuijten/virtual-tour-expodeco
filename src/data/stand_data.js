@@ -969,13 +969,13 @@ export const stand_data = {
                             text: 'Jabonera Clásica II',
                             link: "http://feriavirtual.expodeco.pe/producto/verificar/273",
                             image: "https://s3-prd-expodeco-feria.s3.amazonaws.com/public/HELVEX/POP+39/215.jpg"
-                        }, , {
+                        }, {
                             title: "Accesorios para baño Clásica II",
                             secondary_title: 'Portapapel para repuesto Vertical Clásica',
                             text: 'Portapapel para repuesto Vertical Clásica',
                             link: "http://feriavirtual.expodeco.pe/producto/verificar/274",
                             image: "https://s3-prd-expodeco-feria.s3.amazonaws.com/public/HELVEX/POP+39/266.jpg"
-                        }, , {
+                        }, {
                             title: "Accesorios para baño Clásica II",
                             secondary_title: 'Gancho multiusos reforzado clásica',
                             text: 'Gancho multiusos reforzado clásica',
