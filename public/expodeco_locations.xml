@@ -1,0 +1,28 @@
+<krpano>
+	<include url="scenes/exterior_hotspots.xml" />
+	<include url="scenes/interior_hotspots.xml" />
+
+    <!-- Automatically a floor-hotspot at each pano world location -->
+    <action name="generate_hotspots" autorun="onstart" scope="local">
+        if(true, 
+            set(floorheight, 180.0);
+            for(set(i,0), i LT style.count, inc(i),
+                if (style[get(i)].autohotspot == true,
+                    copy(st, style[get(i)]);
+                    addhotspot(calc((style[get(i)].name)), hs);
+                    
+                    hs.loadstyle(floorspot);
+                    copy(hs.tx, st.ox);
+                    calc(hs.ty, 60);
+                    copy(hs.tz, st.oz);
+                    if (style[get(i)].unique == true,
+                    set(unique_scale, 5);
+                    copy(unique_scale, hs.scale);
+                    );
+                    copy(hs.linkedscene, st.linkedscene);
+                );
+            );
+        )
+        trace(calc(hs.width));
+	</action>
+</krpano>

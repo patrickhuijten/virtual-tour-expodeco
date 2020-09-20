@@ -1,0 +1,28 @@
+﻿<krpano version="1.20" title="Virtual Tour" debugmode="true">
+	
+	<!-- depth map support -->
+	<include url="depth_map_support.xml" />
+	<include url="expodeco_locations.xml" />
+
+	<!-- Javascript interaction -->
+	<include url="sketchfab.xml" />
+
+	<!-- styles -->
+	<include url="skin/vtourskin.xml" />
+	<include url="skin/vtourskin_design_ultra_light.xml" />
+
+
+	<!-- startup action - load the first scene -->
+	<action name="startup" autorun="onstart">
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(get(startscene), null, MERGE);
+		if(startactions !== null, startactions() ); 
+	</action>
+
+	<!-- exterior scenes -->
+	<include url="scenes/exterior.xml" />
+
+	<!-- interior scenes -->
+	<include url="scenes/interior.xml" />
+
+</krpano>
