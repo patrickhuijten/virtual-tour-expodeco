@@ -60,5 +60,8 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/patrickhuijten/virtual-tour-expodeco.git"
+    },
+    "resolutions": {
+        "@vue/cli-service/mini-css-extract-plugin": "0.8.0"
     }
 }
