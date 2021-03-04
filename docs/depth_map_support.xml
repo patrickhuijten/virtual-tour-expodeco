@@ -1,0 +1,38 @@
+<krpano>
+
+  <!-- several helpers -->
+  <include url="%VIEWER%/plugins/contextmenu.xml" />
+  <include url="%VIEWER%/plugins/iphone_fullscreen_swipe.xml" />
+  <include url="%VIEWER%/plugins/webvr.xml" />
+  <!--<include url="%VIEWER%/plugins/depthmap_navigation.xml" if="1" /> -->
+  <!--  <plugin name="navigator" keep="true" devices="html5" url="%VIEWER%/plugins/navigator.js" if="0" />  -->
+
+  <!-- a little helper editor tool, change the if="0" to if="1" to use it -->
+  <!-- <include url="tour_edithelper.xml" if="0" />
+    <include url="depthmap_helper_tool.xml" if="0" /> -->
+
+  <action name="moveto_scene_center" scope="local">
+    tween(view.tx|view.ty|view.tz, calc(image.ox + '|' + image.oy + '|' + image.oz), 1.2);
+</action>
+
+  <action name="floorspot_onclick" scope="local">
+           tour_loadscene(get(caller.linkedscene));    
+	</action>
+
+
+  <!-- a style for changing depthmap settings for all scenes -->
+  <style name="depthmapsettings" background="pano" />
+
+  <style name="floorspot" keep="true" type="text" css="font-size:20px;text-align:center;  background-blend-mode: multiply;  " vcenter="true" width="200" height="200" scale="0.25" bgroundedge="110" bgcolor="0x000000" bgborder="10 0x000000 1" oversampling="2" mipmapping="true" zorder="1" distorted="true" depth="0" depthbuffer="true" torigin="world" rotationorder="xyz" rx="-90" alpha="0" onloaded.addevent="delayedcall(1.0, tween(alpha,0.3));" onover.addevent="tween(scale,0.3); tween(alpha,0.3));" onout.addevent="tween(scale,0.25); tween(alpha,0.3));" onclick="floorspot_onclick();" />
+
+  <!-- action for loading scenes -->
+  <action name="tour_loadscene" scope="local" args="scenename">
+    
+    loadscene(get(scenename), null, MERGE|KEEPVIEW|KEEPMOVING, BLEND(0.5, linear));
+    moveto_scene_center()
+    </action>
+
+  <!-- default depthmap rendering mode -->
+  <display depthmaprendermode="3dmodel" />
+
+</krpano>

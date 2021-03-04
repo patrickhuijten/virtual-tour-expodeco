@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <link rel=icon href=./favicon.ico>
+    <title>virtual-tour-expodeco</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap"
+        rel=stylesheet>
+    <script src=https://static.sketchfab.com/api/sketchfab-viewer-1.8.2.js></script>
+    <script>function initialize(uid) {
+            window.sketchfabClient.init(uid, {
+                success: function onSuccess(api) {
+                    api.addEventListener("viewerready", function () {
+                        // API is ready to use
+                        // Insert your code here
+                        console.log("Viewer is ready");
+                    });
+                    api.addEventListener("annotationSelect", function (index) {
+                        setTimeout(() => {
+                            window.annotationCallback(index)
+                        }, 600);
+                    })
+                },
+                error: function onError() {
+                    console.log("Viewer error");
+                },
+                navigation: 'orbit',
+                annotation_tooltip_visible: 0,
+                ui_controls: 0,
+                ui_fullscreen: 0,
+                ui_help: 0,
+                ui_inspector: 0,
+                ui_stop: 0,
+                autostart: 1,
+                transparent: 1,
+                orbit_constraint_pitch_down: -45
+            });
+        }</script>
+    <link href=./css/app.7eb9524a.css rel=preload as=style>
+    <link href=./js/app.fe025f67.js rel=preload as=script>
+    <link href=./js/chunk-vendors.36a97d95.js rel=preload as=script>
+    <link href=./css/app.7eb9524a.css rel=stylesheet>
+</head>
+
+<body><noscript><strong>We're sorry but virtual-tour-expodeco doesn't work properly without JavaScript enabled. Please
+            enable it to continue.</strong></noscript>
+    <div id=app></div>
+    <script src=./js/chunk-vendors.36a97d95.js></script>
+    <script src=./js/app.fe025f67.js></script>
+</body>
+
+</html>

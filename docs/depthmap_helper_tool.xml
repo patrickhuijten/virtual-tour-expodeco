@@ -1,0 +1,208 @@
+<krpano>
+
+	<!--
+		A small helper tool for finding the correct
+		offset and scale settings for a depthmap image.
+
+		1. Click 'Dollhouse View'.
+
+		2. Change the 'Offset' value until walls/floors
+		   that should be straight are really straight.
+
+		3. One box in the checkerboard is 1x1 Meter.
+
+		4. Change the 'Scale' and 'Floor Level' settings
+		   until the correct/target size is reached.
+		   The floor itself and the floor level are only a helper
+		   tools for finding the correct scaling.
+
+		5. Optionally change also the 'Rotation' value, that will rotate
+		   around the Y-axis by using the image.prealign setting.
+	-->
+
+
+	<!-- layout -->
+
+	<layer name="depthmap_helpertool" keep="true" type="container"
+	       align="right" x="10" width="200" height="212"
+	       bgalpha="1.0" bgcolor="0xFFFFFF" bgborder="0 0x00000 0.7" bgroundedge="1" bgshadow="0 1 4 0x000000 1.0"
+	       >
+
+		<layer name="dmht_info" style="dmht_text" align="top" y="8"
+		       html="krpano Depthmap Helper Tool"
+		       ondown="dmht_layerdragging(get(layer[depthmap_helpertool]));"
+		       />
+
+		<layer name="dmht_depthoffset" style="dmht_button|dmht_value_control" align="top" x="0" y="32" width="180"
+		       varstep="0.05"
+		       vardragrange="1.0"
+		       getvar="copy(var, image.depthmap.offset);"
+		       setvar="copy(image.depthmap.offset, var); updatescreen(); roundval(tmp,var,3); txtadd(html,'Offset: ',get(tmp));"
+		       />
+
+		<layer name="dmht_depthscale" style="dmht_button|dmht_value_control" align="top" x="0" y="62" width="180"
+		       varstep="0.1"
+		       vardragrange="1.0"
+		       getvar="copy(var, image.depthmap.scale); copy(startscale,var); copy(floorlevel, hotspot[dmht_floor].ty);"
+		       setvar="if(var == 0.0, set(var,0.001)); copy(image.depthmap.scale, var); updatescreen(); roundval(tmp,var,3); txtadd(html,'Scale: ',get(tmp)); calc(floorscale,var / startscale); Math.abs(floorscale); calc(hotspot[dmht_floor].ty, floorlevel * floorscale); updatescreen(); roundval(tmp,hotspot[dmht_floor].ty,0); txtadd(layer[dmht_floorlevel].html,'Floor Level: ',get(tmp),'cm');"
+		       />
+
+		<layer name="dmht_floorlevel" style="dmht_button|dmht_value_control" align="top" x="0" y="92" width="180"
+		       varstep="5"
+		       vardragrange="300"
+		       getvar="copy(var, hotspot[dmht_floor].ty);"
+		       setvar="copy(hotspot[dmht_floor].ty, var); updatescreen(); roundval(tmp,var,0); txtadd(html,'Floor Offset: ',get(tmp),'cm');"
+		       />
+
+		<layer name="dmht_prealign" style="dmht_button|dmht_value_control" align="top" x="0" y="122" width="180"
+		       varstep="5"
+		       vardragrange="360"
+		       getvar="txtsplit(image.prealign,'|',null,var,null); if(var == null,set(var,0));"
+		       setvar="calc(image.prealign,'0|'+var+'|0');  updatescreen(); roundval(tmp,var,1); txtadd(html,'Rotation: ',get(tmp),'°');"
+		       />
+
+		<layer name="dmht_dollhouseview" style="dmht_button" align="top" x="0" y="152" width="180"
+		       html="Dollhouse View"
+		       onclick="set(control.invert,true); tween(view.oz,1000); lookto(270,35,80,default,true,true); tween(view.tx,0); tween(view.ty,0); tween(view.tz,0);"
+		       />
+
+		<layer name="dmht_resetview" style="dmht_button" align="top" x="0" y="182" width="180"
+		       html="Reset View"
+		       onclick="set(control.invert,false); tween(view.fisheye|view.tx|view.ty|view.tz|view.ox|view.oy|view.oz, calc('0|'+image.ox+'|'+image.oy+'|'+image.oz+'|0|0|0'));"
+		       />
+
+	</layer>
+
+
+	<!-- the floor level hotspot -->
+
+	<hotspot name="dmht_floor" keep="true" enabled="false"
+		url="depthmap_helpertool_checkerboard.png" alpha="0.7"
+		width="1000" height="1000" scale="0.5" distorted="true" depth="0"
+		rotationorder="xyz" rx="-90"
+		torigin="world" tx="0" ty="180" tz="0"
+		depthbuffer="true"
+		/>
+
+
+
+	<!-- styles / actions -->
+
+	<style name="dmht_text"
+	       type="text"
+	       css="color:#000000;"
+	       bg="false"
+	       />
+
+	<style name="dmht_button"
+	       type="text"
+	       css="text-align:center;"
+	       padding="4 8"
+	       bgborder="1 0x000000 0.12"
+	       bgroundedge="1"
+	       bgcolor="0xFFFFFF"
+	       ondown.addevent="set(bgcolor,0xDDDDDD);"
+	       onup.addevent="set(bgcolor,0xFFFFFF);"
+	       onover.addevent="if(!pressed,set(bgcolor,0xEEEEEE));"
+	       onout.addevent="if(!pressed,set(bgcolor,0xFFFFFF));"
+	       />
+
+	<style name="dmht_value_control"
+	       ondown.addevent="dmht_value_control_ondown();"
+	       onloaded.addevent="getvar(); setvar(); dmht_value_control_add_incdec_buttons();"
+	       />
+
+
+	<!-- an action for dragging the helper tool layer -->
+	<action name="dmht_layerdragging" scope="localonly" args="layertodrag">
+		copy(backup_align, layertodrag.align);
+		copy(backup_edge, layertodrag.backup_edge);
+		layertodrag.changeorigin(lefttop,lefttop);
+		set(layertodrag.align,lefttop);
+		set(layertodrag.edge,lefttop);
+		layertodrag.updatepos();
+		copy(start_lx, layertodrag.pixelx);
+		copy(start_ly, layertodrag.pixely);
+		copy(start_mx, global.mouse.x);
+		copy(start_my, global.mouse.y);
+		asyncloop(caller.pressed,
+			calc(layertodrag.x, start_lx + global.mouse.x - start_mx);
+			calc(layertodrag.y, start_ly + global.mouse.y - start_my);
+			clamp(layertodrag.x, 1, calc(global.stagewidth - layertodrag.pixelwidth - 1));
+			clamp(layertodrag.y, 1, calc(global.stageheight - layertodrag.pixelheight - 1));
+		  ,
+			layertodrag.changeorigin(get(backup_align),get(backup_edge));
+		);
+	</action>
+
+
+	<!-- an action for add increase/decrease buttons on the value control -->
+	<action name="dmht_value_control_add_incdec_buttons">
+		calc(name_inc, name + '_inc');
+		calc(name_dec, name + '_dec');
+		addlayer(get(name_inc));
+		addlayer(get(name_dec));
+		copy(layer_inc, layer[get(name_inc)]);
+		copy(layer_dec, layer[get(name_dec)]);
+		layer_inc.loadstyle(dmht_button);
+		layer_dec.loadstyle(dmht_button);
+		copy(layer_inc.parent, name);
+		copy(layer_dec.parent, name);
+		set(layer_inc.align, right);
+		set(layer_dec.align, left);
+		set(layer_inc.html, '+');
+		set(layer_dec.html, '-');
+		set(layer_inc.ondown, set(stepdir,+1); dmht_value_control_incdec_ondown(); );
+		set(layer_dec.ondown, set(stepdir,-1); dmht_value_control_incdec_ondown(); );
+	</action>
+
+
+	<!-- an action for increasing or decreasing the button values -->
+	<action name="dmht_value_control_incdec_ondown">
+		copy(t1,timertick);
+		asyncloop(pressed,
+			calc(dt,timertick - t1);
+			if(dt GT 500,
+				callwith(calc('layer['+parent+']'),
+					calc(dt,timertick - t1);
+					calc(stepscale, dt GT 2000 ? (dt / 1000) : 1.0);
+					getvar();
+					calc(var, var + stepdir * stepscale * varstep / display.currentfps);
+					setvar();
+				);
+			);
+		  ,
+			calc(dt,timertick - t1);
+			if(dt LT 500,
+				callwith(calc('layer['+parent+']'),
+					getvar();
+					calc(var, (var + stepdir * varstep) / varstep);
+					Math.round(var);
+					calc(var, var * varstep);
+					setvar();
+				);
+			);
+		);
+	</action>
+
+
+	<!-- an action for changing the button value by dragging/moving the mouse around -->
+	<action name="dmht_value_control_ondown">
+		copy(startx, mouse.stagex);
+		copy(starty, mouse.stagey);
+		getvar();
+		copy(startv, var);
+		asyncloop(pressed,
+			calc(dx, (mouse.stagex - startx) / stagewidth );
+			calc(dy, (mouse.stagey - starty) / stageheight );
+			if(dx*dx GT dy*dy,
+				calc(var,startv + dx * vardragrange);
+			  ,
+				calc(var,startv + dy * vardragrange);
+			);
+			setvar();
+		  );
+	</action>
+
+
+</krpano>

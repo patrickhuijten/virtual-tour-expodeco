@@ -1,0 +1,7 @@
+<krpano>
+	<action name="open_sketchfab" scope="local" args="uid">
+
+    jscall(calc('window.enableSketchfab("' + get(uid) + '")'));
+	</action>
+
+</krpano>
